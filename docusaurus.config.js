@@ -35,6 +35,7 @@ module.exports = {
       ],
     },
   },
+  plugins: ['docusaurus-lunr-search'],
   presets: [
     [
       '@docusaurus/preset-classic',
