@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Getting Started with Beaker
 ---
 
 Welcome! Beaker is a peer-to-peer browser for Web hackers. It includes a bunch of tools:
@@ -7,7 +7,7 @@ Welcome! Beaker is a peer-to-peer browser for Web hackers. It includes a bunch o
 * [Instant website creation](beginner/creating-new-hyperdrives.md)
 * [A builtin editor](beginner/using-the-editor.md)
 * [A terminal environment](advanced/webterm.md)
-* [Peer-to-peer Web APIs](api/reference.md)
+* [Peer-to-peer Web APIs](/#apis)
 * and more.
 
 In this guide, we're going to familiarize you with Beaker's ideas and tools, but if you want to jump straight into the action, start here:
@@ -32,7 +32,7 @@ One fun attribute of peer-to-peer is "co-hosting." This is where you help keep a
 
 ## What should I learn next?
 
-A lot of Beaker's experience is the personal-site social network. If I were you, I'd see [how to join the social network](joining-the-social-network.md).
+A lot of Beaker's experience is the social network of personal websites. If I were you, I'd see [how to join the social network](joining-the-social-network.md).
 
 > **[Joining the Social Network](joining-the-social-network.md)**
 
@@ -49,12 +49,12 @@ The [Beaker Developer Portal](https://beaker.dev/) has a directory of useful res
 * [Templates](https://beaker.dev/docs/templates/). Pre-made hyperdrives you can copy.
 * [Tutorials](https://beaker.dev/docs/tutorials/). More developer-focused guides to teach you about building on Beaker.
 
-You can also [find Beaker's new Web APIs here](api/reference.md).
+You can also [find Beaker's new Web APIs here](/#apis).
 
-> **[beaker.contacts](api/beaker.contacts.md)**
+> **[beaker.contacts](apis/beaker.contacts.md)**
 
-> **[beaker.hyperdrive](api/beaker.hyperdrive.md)**
+> **[beaker.hyperdrive](apis/beaker.hyperdrive.md)**
 
-> **[beaker.peersockets](api/beaker.peersockets.md)**
+> **[beaker.peersockets](apis/beaker.peersockets.md)**
 
 If you're interested in learning technical details, [see the developer's Introduction to Hyperdrive](developers/introduction-to-hyperdrive.md).

@@ -8,11 +8,11 @@ Beaker includes a social network of personal websites. We call these websites th
 Every user has a "Profile Hyperdrive" which represents them on the network. [Learn more](intermediate/your-profile-drive.md).
 :::
 
-In this guide, we're going to personalize your profile drive, find some other users to add to your address book, get you listed in Beaker's User Directory, and set up a hackable social media feed.
+In this guide, we're going to personalize your profile drive, find some other users to add to your address book, get you listed in Beaker's User Directory, and say hello on your social media feed.
 
 ## Customizing your profile drive
 
-During Beaker's setup, you filled out a name, picture, and bio for your profile. You can visit your profile drive by clicking your picture at the top right of the UI.
+During Beaker's setup, you filled out a name, picture, and bio for your profile. You can visit your profile drive by clicking your picture at the top right of the browser.
 
 ![](/img/profile-button.png)
 
@@ -112,9 +112,9 @@ Let's add a button! This button will help other users add your profile drive to 
 </html>
 ```
 
-Now your visitors have a quick way to follow your site! \([Read more about the beaker.contacts API](api/beaker.contacts.md).\)
+Now your visitors have a quick way to follow your site! \([Read more about the beaker.contacts API](apis/beaker.contacts.md).\)
 
-Your profile name, bio, and picture [can be changed using the drive properties](beginner/changing-a-drive-title-or-thumbnail.md). The profile page won't update automatically, but we can add that!
+Your profile name, bio, and picture [can be changed using the "Drive Properties" dialog](beginner/changing-a-drive-title-or-thumbnail.md). The profile page won't update automatically, but we can add that!
 
 ![](/img/social-network-profile-2.png)
 
@@ -171,11 +171,11 @@ Your profile name, bio, and picture [can be changed using the drive properties](
 </html>
 ```
 
-Now your profile drive will read your name and bio on load and display it on the page. \([Read more about the beaker.hyperdrive API.](api/beaker.hyperdrive.md)\)
+Now your profile drive will read your name and bio on load and display it on the page. \([Read more about the beaker.hyperdrive API.](apis/beaker.hyperdrive.md)\)
 
 ## Finding other users
 
-It's feeling pretty lonely in here! Let's find some people to add to your [address book](intermediate/your-address-book.md).
+It's feeling pretty lonely in here! Let's find some people to add to [your address book](intermediate/your-address-book.md).
 
 Beaker maintains a [user directory](https://userlist.beakerbrowser.com/). You can find a link to it in the top right of the UI.
 
@@ -183,47 +183,41 @@ Beaker maintains a [user directory](https://userlist.beakerbrowser.com/). You ca
 
 Currently, the directory uses Twitter usernames to list profile drives, so you can find people by looking up their Twitter handle. \(We'll add more ways to list drives soon!\)
 
-You can visit the profiles by clicking on their names. If you find somebody you want to follow, click the "Add to Address Book" button next to their name.
+You can visit the profiles by clicking on their names. If you find somebody you want to follow, click on the "Add to Address Book" button next to their name.
 
 ![](/img/user-directory-entry.png)
 
 ## Adding yourself to the user directory
 
-To add yourself to the directory, click "Sign in via Twitter." You'll be directed to sign in and authorize our directory to see your twitter profile. \(Again: we'll add more ways to sign in soon!\)
+To add yourself to the directory, click "Sign in via Twitter." You'll be directed to sign in and authorize our directory to see your Twitter profile. \(Again: we'll add more ways to sign in soon!\)
 
 ![](/img/user-directory-add.png)
 
 After you've signed in, click "Add Your Listing." You'll be prompted to select your profile drive. Do that and your profile will be added!
 
-## Set up your feed app
+## Say hello on your feed
 
-Now that you've added some people to [your address book](intermediate/your-address-book.md), let's set up a social media feed.
+Now that you've added some people to [your address book](intermediate/your-address-book.md), let's say hi on your social media feed.
 
 :::note
-This feed app will be another hyperdrive which reads and writes posts from your profile drive. It lives separately from your profile. You can share it if you want, but everybody can create their own feed app.
+This feed app will be another hyperdrive which reads and writes posts from your profile drive. It lives separately from your profile.
 :::
 
-[Open the Microblog Feed Template](https://beaker.dev/docs/templates/microblog-feed/) and click "Create Drive from this Template." Change the title if you like and click "Create."
+Visit the "Blahbity Blog" app at this URL:
 
-![](/img/create-my-feed.png)
+[hyper://a8e9bd0f4df60ed5246a1b1f53d51a1feaeb1315266f769ac218436f12fda830/](hyper://a8e9bd0f4df60ed5246a1b1f53d51a1feaeb1315266f769ac218436f12fda830/)
 
-This will create a Hyperdrive app _which you own_. You can [edit the source](beginner/using-the-editor.md) and make any change you want.
+You'll see the following screen:
 
 ![](/img/my-feed-not-signed-in.png)
 
-After you select your profile, you'll see posts from people in your address book. Any posts you create will be written to your profile drive under the `/microblog` folder. Posts are Markdown by default \(`.md`\) but you can posts `.txt`, HTML, images, video, and audio. \(The HTML goes in an iframe just to be safe.\)
+After you select your profile, you'll see posts from people in your address book. Any posts you create will be written to your profile drive under the `/microblog` folder. Posts are Markdown by default \(`.md`\) but you can post .txt, HTML, images, video, and audio. \(The HTML goes in an `<iframe>` just to be safe.\)
 
 ![](/img/my-feed.png)
 
 ## You're now hooked in!
 
-You can make posts and see posts from your network, _and_ you can hack the social media feed app to change the styles and add new features.
-
-Of course, you might want to find a feed app somebody else made so then it's their headache. The good news is: your data will transfer between the apps!
-
-:::note
-This network is an experiment to see what happens when users are put in control of the applications. We're going to help guide things, but we're also going to stay hands-off when possible. It might get a little messy, but we hope you'll have some fun!
-:::
+You can make posts and see posts from your network, _and_ you can [fork the social media feed app](advanced/forking-hyperdrives.md) to change the styles and add new features.
 
 ## What next?
 
@@ -234,4 +228,4 @@ The [Beaker Developer Portal](https://beaker.dev/) has a directory of useful res
 * [Templates](https://beaker.dev/docs/templates/). Pre-made hyperdrives you can copy.
 * [Tutorials](https://beaker.dev/docs/tutorials/). More developer-focused guides to teach you about building on Beaker.
 
-You can also [find Beaker's new Web APIs here](api/reference.md).
+You can also [find Beaker's new Web APIs here](/#apis).

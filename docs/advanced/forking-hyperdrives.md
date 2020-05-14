@@ -11,9 +11,9 @@ You may want to fork a drive when you want
 1. To work on a drive without publishing the changes immediately, or
 2. To work on a drive with other people.
 
-## Creating Forks
+## Creating forks
 
-To fork a hyperdrive, click the blue address button on the left of the URL bar. Then click "Tools" and then "Fork Drive."
+To fork a hyperdrive, click on the Site Info button on the left side of the address bar. Then click "Tools" and then "Fork Drive."
 
 ![](/img/fork-drive.png)
 
@@ -21,18 +21,22 @@ You will be prompted to choose a label for the fork. The label is used privately
 
 ![](/img/fork-drive-dialog.png)
 
-## Managing Forks
+:::note
+You can make an independent copy of a drive (not attached to its parent) by going to the "Copy" tab.
+:::
 
-When visiting a fork, you will see the fork label in the site-info button of the URL bar.
+## Managing forks
 
-![Viewing a fork labeled &quot;my-fork.&quot;](/img/fork-site-info.png)
+When visiting a fork, you will see the fork label in the Site Info button of the address bar.
 
-To view all forks of a site, click the site-info button and click the "Forks" submenu.
+![](/img/fork-site-info.png)
+
+To view all forks of a site, click on the Site Info button and click on the "Forks" submenu.
 
 ![](/img/site-info-forks.png)
 
-From the site info panel you can see a list of available forks. You can navigate between them and the original, delete them, and create new forks.
+From the Site Info panel you can see a list of available forks. You can navigate between them and the original, delete them, and create new forks.
 
-You can view the forks of a hyperdrive in "My Drives" by clicking the fork number in the listing.
+You can view the forks of a hyperdrive in "My Drives" by clicking on the fork number in the listing.
 
 ![](/img/my-drives-forks.png)

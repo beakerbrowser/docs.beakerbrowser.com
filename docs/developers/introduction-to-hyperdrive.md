@@ -25,7 +25,7 @@ Each hyperdrive \(or "drive"\) is essentially a networked folder. A drive can co
 
 Hyperdrives in Beaker are able to execute Web content \(HTML/JS/CSS\).
 
-### Public key URLs
+### Public-key URLs
 
 Every drive is identified by a public key, often called just the "key." This key is encoded as a 64-character hex string.
 
@@ -61,7 +61,7 @@ The version of a drive can be specified in its URL after the key. It takes the f
 hyper://{key}+{version}/{path...}
 ```
 
-See also: [drive\(\)](api/beaker.hyperdrive.md#beakerhyperdrivedriveurl), [getInfo\(\)](api/beaker.hyperdrive.md#beakerhyperdrivegetinfourl-opts), [diff\(\)](api/beaker.hyperdrive.md#beakerhyperdrivediffurl-other-prefix-opts)
+See also: [drive\(\)](apis/beaker.hyperdrive.md#beakerhyperdrivedriveurl), [getInfo\(\)](apis/beaker.hyperdrive.md#beakerhyperdrivegetinfourl-opts), [diff\(\)](apis/beaker.hyperdrive.md#beakerhyperdrivediffurl-other-prefix-opts)
 
 ### Mounts
 
@@ -69,14 +69,14 @@ See also: [drive\(\)](api/beaker.hyperdrive.md#beakerhyperdrivedriveurl), [getIn
 
 It is possible to mount drives with or without a version. If a version is not specified, the latest content will always be provided when accessing the mounted folder.
 
-See also: [stat\(\)](api/beaker.hyperdrive.md#beakerhyperdrivestaturl-opts), [mount\(\)](api/beaker.hyperdrive.md#beakerhyperdrivemounturl-mount-opts), [unmount\(\)](api/beaker.hyperdrive.md#beakerhyperdriveunmounturl-opts)
+See also: [stat\(\)](apis/beaker.hyperdrive.md#beakerhyperdrivestaturl-opts), [mount\(\)](apis/beaker.hyperdrive.md#beakerhyperdrivemounturl-mount-opts), [unmount\(\)](apis/beaker.hyperdrive.md#beakerhyperdriveunmounturl-opts)
 
 ### File K/V metadata
 
 Every file has key-value metadata which can be used to store useful information. For example, a common metadata K/V is the `href` key, which is used to indicate that a file is written in reference to some other resource on the Internet.
 
-See also: [stat\(\)](api/beaker.hyperdrive.md#beakerhyperdrivestaturl-opts), [writeFile\(\)](api/beaker.hyperdrive.md#beakerhyperdrivewritefileurl-data-opts), [updateMetadata\(\)](api/beaker.hyperdrive.md#beakerhyperdriveupdatemetadataurl-metadata-opts), [deleteMetadata\(\)](api/beakerhyperdrivedeletemetadataurl-keys-opts)
+See also: [stat\(\)](apis/beaker.hyperdrive.md#beakerhyperdrivestaturl-opts), [writeFile\(\)](apis/beaker.hyperdrive.md#beakerhyperdrivewritefileurl-data-opts), [updateMetadata\(\)](apis/beaker.hyperdrive.md#beakerhyperdriveupdatemetadataurl-metadata-opts), [deleteMetadata\(\)](apis/beakerhyperdrivedeletemetadataurl-keys-opts)
 
 ### Querying
 
-The Hyperdrive API includes a [query\(\) method](api/beaker.hyperdrive.md#beakerhyperdrivequeryquery) which can be used to quickly scan multiple folders. It is able to filter against paths, metadata, entry type, and mount destinations. It can also sort the output and apply limit/offset for pagination.
+The Hyperdrive API includes a [query\(\) method](apis/beaker.hyperdrive.md#beakerhyperdrivequeryquery) which can be used to quickly scan multiple folders. It is able to filter against paths, metadata, entry type, and mount destinations. It can also sort the output and apply limit/offset for pagination.

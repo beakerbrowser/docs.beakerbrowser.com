@@ -1,7 +1,7 @@
 module.exports = {
   docs: {
-    Intro: [
-      'getting-started',
+    Welcome: [
+      'getting-started-with-beaker',
       'joining-the-social-network',
       'why-use-beaker',
     ],
@@ -27,15 +27,14 @@ module.exports = {
       'advanced/forking-hyperdrives',
       'advanced/comparing-and-merging-hyperdrives',
     ],
-    API: [
-      'api/reference',
-      'api/beaker.capabilities',
-      'api/beaker.contacts',
-      'api/beaker.hyperdrive',
-      'api/beaker.markdown',
-      'api/beaker.peersockets',
-      'api/beaker.shell',
-      'api/beaker.terminal',
+    APIs: [
+      'apis/beaker.capabilities',
+      'apis/beaker.contacts',
+      'apis/beaker.hyperdrive',
+      'apis/beaker.markdown',
+      'apis/beaker.peersockets',
+      'apis/beaker.shell',
+      'apis/beaker.terminal',
     ],
     Developers: [
       'developers/introduction-to-hyperdrive',

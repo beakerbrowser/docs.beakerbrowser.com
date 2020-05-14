@@ -2,7 +2,7 @@
 title: Index.json Manifest
 ---
 
-Every Hyperdrive has a manifest file at `/index.json`. This file is used by the browser to store various kinds of metadata, including the title and description of the drive.
+Every hyperdrive has a manifest file at `/index.json`. This file is used by the browser to store various kinds of metadata, including the title and description of the drive.
 
 :::note
 Note: the manifest schema is still under development and may change.
@@ -10,7 +10,7 @@ Note: the manifest schema is still under development and may change.
 
 An example manifest:
 
-```javascript
+```json
 {
   "title": "My Hyper Website",
   "description": "An example hyperdrive"
