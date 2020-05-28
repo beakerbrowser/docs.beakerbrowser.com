@@ -2,9 +2,9 @@
 title: beaker.terminal
 ---
 
-### beaker.terminal.registerCommand\(command\)
+### beaker.terminal.registerCommand(command)
 
-Register a Webterm Page Command. See the [Webterm documentation on Page Commands](advanced/webterm.md#page-commands).
+Register a Webterm page command. See the [Webterm documentation on page commands](advanced/webterm.md#page-commands).
 
 * **command** Object
   * **handle** Function. The command's handling function. May be async. Accepts a single `opts` object as the first argument and then any number of positional arguments after.
@@ -25,9 +25,9 @@ beaker.terminal.registerCommand({
 // @alert "Hello World"
 ```
 
-### beaker.terminal.unregisterCommand\(commandName\)
+### beaker.terminal.unregisterCommand(commandName)
 
-Unregisters a Webterm Page Command. See the [Webterm documentation on Page Commands](advanced/webterm.md#page-commands).
+Unregisters a Webterm page command. See the [Webterm documentation on page commands](advanced/webterm.md#page-commands).
 
 * **commandName** String. The name of the command to unregister.
 * Returns **Void**.

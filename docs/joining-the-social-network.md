@@ -16,7 +16,7 @@ During Beaker's setup, you filled out a name, picture, and bio for your profile.
 
 ![](/img/profile-button.png)
 
-You will find your profile drive is very plain. That's because we want you to build it! \(Frankly it was a cost-cutting measure but don't tell anyone.\)
+You will find your profile drive is very plain. That's because we want you to build it! (Frankly it was a cost-cutting measure but don't tell anyone.)
 
 ![](/img/social-network-profile-1.png)
 
@@ -112,7 +112,7 @@ Let's add a button! This button will help other users add your profile drive to 
 </html>
 ```
 
-Now your visitors have a quick way to follow your site! \([Read more about the beaker.contacts API](apis/beaker.contacts.md).\)
+Now your visitors have a quick way to follow your site! ([Read more about the beaker.contacts API](apis/beaker.contacts.md).)
 
 Your profile name, bio, and picture [can be changed using the "Drive Properties" dialog](beginner/changing-a-drive-title-or-thumbnail.md). The profile page won't update automatically, but we can add that!
 
@@ -171,7 +171,7 @@ Your profile name, bio, and picture [can be changed using the "Drive Properties"
 </html>
 ```
 
-Now your profile drive will read your name and bio on load and display it on the page. \([Read more about the beaker.hyperdrive API.](apis/beaker.hyperdrive.md)\)
+Now your profile drive will read your name and bio on load and display it on the page. ([Read more about the beaker.hyperdrive API.](apis/beaker.hyperdrive.md))
 
 ## Finding other users
 
@@ -181,7 +181,7 @@ Beaker maintains a [user directory](https://userlist.beakerbrowser.com/). You ca
 
 ![](/img/user-directory.png)
 
-Currently, the directory uses Twitter usernames to list profile drives, so you can find people by looking up their Twitter handle. \(We'll add more ways to list drives soon!\)
+Currently, the directory uses Twitter usernames to list profile drives, so you can find people by looking up their Twitter handle. (We'll add more ways to list drives soon!)
 
 You can visit the profiles by clicking on their names. If you find somebody you want to follow, click on the "Add to Address Book" button next to their name.
 
@@ -189,7 +189,7 @@ You can visit the profiles by clicking on their names. If you find somebody you 
 
 ## Adding yourself to the user directory
 
-To add yourself to the directory, click "Sign in via Twitter." You'll be directed to sign in and authorize our directory to see your Twitter profile. \(Again: we'll add more ways to sign in soon!\)
+To add yourself to the directory, click "Sign in via Twitter." You'll be directed to sign in and authorize our directory to see your Twitter profile. (Again: we'll add more ways to sign in soon!)
 
 ![](/img/user-directory-add.png)
 
@@ -203,15 +203,13 @@ Now that you've added some people to [your address book](intermediate/your-addre
 This feed app will be another hyperdrive which reads and writes posts from your profile drive. It lives separately from your profile.
 :::
 
-Visit the "Blahbity Blog" app at this URL:
-
-[hyper://a8e9bd0f4df60ed5246a1b1f53d51a1feaeb1315266f769ac218436f12fda830/](hyper://a8e9bd0f4df60ed5246a1b1f53d51a1feaeb1315266f769ac218436f12fda830/)
+Visit the "Blahbity Blog" app at this URL: [hyper://a8e9bd0f4df60ed5246a1b1f53d51a1feaeb1315266f769ac218436f12fda830/](hyper://a8e9bd0f4df60ed5246a1b1f53d51a1feaeb1315266f769ac218436f12fda830/)
 
 You'll see the following screen:
 
 ![](/img/my-feed-not-signed-in.png)
 
-After you select your profile, you'll see posts from people in your address book. Any posts you create will be written to your profile drive under the `/microblog` folder. Posts are Markdown by default \(`.md`\) but you can post .txt, HTML, images, video, and audio. \(The HTML goes in an `<iframe>` just to be safe.\)
+After you select your profile, you'll see posts from people in your address book. Any posts you create will be written to your profile drive under the `/microblog` folder. Posts are Markdown by default (.md) but you can post .txt, HTML, images, video, and audio. (The HTML goes in an `<iframe>` just to be safe.)
 
 ![](/img/my-feed.png)
 

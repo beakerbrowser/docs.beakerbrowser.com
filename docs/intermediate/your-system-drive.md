@@ -8,4 +8,4 @@ You can find the drive by opening the browser menu, clicking "My Library," and s
 
 ![](/img/browser-menu-system-drive.png)
 
-Beaker assigns your system drive the `hyper://system/` domain name. You cannot share content using the system drive, as each user has their own `hyper://system/` address. \(This is a good thing because your system drive contains private information!\)
+Beaker assigns your system drive the `hyper://system/` domain name. You cannot share content using the system drive, as each user has their own `hyper://system/` address. (This is a good thing because your system drive contains private information!)

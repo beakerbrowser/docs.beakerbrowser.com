@@ -14,7 +14,7 @@ Visit your hyperdrive and [open the editor](beginner/using-the-editor.md). Then 
 
 ![Open the files listing by clicking on the folder icon.](/img/editor-list-files.png)
 
-Right-click in the files listing \(but not on a file\) and select "New Mount."
+Right-click in the files listing (but not on a file) and select "New Mount."
 
 ![](/img/editor-new-mount.png)
 
@@ -36,7 +36,7 @@ Visit your hyperdrive and open the files explorer by clicking "Explore Files."
 
 ![](/img/open-files-explorer.png)
 
-Right-click in the files listing \(but not on a file\) and select "New Mount."
+Right-click in the files listing (but not on a file) and select "New Mount."
 
 ![](/img/files-explorer-new-mount.png)
 

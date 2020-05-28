@@ -4,7 +4,7 @@ title: Webterm
 
 Webterm is a web-based terminal environment that ships with Beaker. It is superficially similar to the Unix "bash" terminal, but designed specifically for the browser and Hyperdrive environment.
 
-![](/img/screen-shot-2020-03-02-at-4.40.48-pm.png)
+![](/img/webterm.png)
 
 ## Basic usage
 
@@ -152,4 +152,4 @@ Pages can export their own commands, which they define using the [beaker.termina
 @go_inbox
 ```
 
-Unlike normal Webterm commands, Page commands run on the page and therefore have no special privileges. They also do not have access to the `env`, `page`, `out`, and other APIs attached to the `this` object.
+Unlike normal Webterm commands, page commands run on the page and therefore have no special privileges. They also do not have access to the `env`, `page`, `out`, and other APIs attached to the `this` object.

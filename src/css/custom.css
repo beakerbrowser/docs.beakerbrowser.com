@@ -8,12 +8,6 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: rgb(69, 117, 245);
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
 }
 
@@ -22,6 +16,10 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+.hero--primary {
+  --ifm-hero-text-color: white;
 }
 
 .admonition h5 {
@@ -33,6 +31,6 @@
   text-decoration: var(--ifm-link-decoration);
 }
 
-.alert a:hover {
+.alert.alert--secondary a:hover {
   text-decoration: var(--ifm-link-hover-decoration);
 }

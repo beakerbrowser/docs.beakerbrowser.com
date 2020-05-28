@@ -16,13 +16,13 @@ Because Beaker applications run on the client, the entire source of the app is a
 
 Hyperdrive is a complete filesystem and so Beaker's editor can edit the files with no problem. You can build your entire application without ever using another tool.
 
-## Distributed \(and reduced\) costs
+## Distributed (and reduced) costs
 
 When you don't have to set up a server, you don't have to _pay_ for a server. Effectively every user is contributing their own bandwidth, compute, and storage to run the application. That means that you, as a developer, are no longer shouldering the hosting costs alone.
 
 ## A global hypermedia filesystem
 
-Hyperdrive is a filesystem where every folder and file has a URL. Everything is linkable, and everything is accessible over the Internet \(pursuant to access controls, of course\).
+Hyperdrive is a filesystem where every folder and file has a URL. Everything is linkable, and everything is accessible over the Internet (pursuant to access controls, of course).
 
 Applications use this linkability to join data across users and apps. There are no data siloes on the Beaker Web.
 

@@ -9,7 +9,7 @@ Peersockets enable you to send and receive messages to peers on a hyperdrive.
 
 Hyperdrive establishes connections between users to send drive-data. Peersockets piggybacks on those connections by creating additional message-channels.
 
-The peersocket channel is sepated into "topics" which are string IDs. You choose to handle to messages in a topic by "joining" the topic. If you don't join a topic, your device will still receive the messages, but they'll be discarded.
+The peersocket channel is separated into "topics" which are string IDs. You choose to handle messages in a topic by "joining" the topic. If you don't join a topic, your device will still receive the messages, but they'll be discarded.
 
 :::note
 Note: topics are specific to a hyperdrive. You can only send messages to peers connected to the same hyperdrive.
@@ -49,7 +49,7 @@ topic.addEventListener('message', e => {
 
 ## API
 
-### beaker.peersockets.join\(topic\)
+### beaker.peersockets.join(topic)
 
 Join a "topic" for sending and receiving messages.
 
@@ -69,7 +69,7 @@ topic.addEventListener('message', e => {
 })
 ```
 
-### beaker.peersockets.watch\(\)
+### beaker.peersockets.watch()
 
 Watch for connection events. Emits "join" events for all connections that exist at time-of-call.
 
@@ -95,7 +95,7 @@ peerEvents.addEventListener('leave', e => {
 Emitted when a peer sends you a message on the topic.
 
 * **peerId** Number. The sending peer's identifier.
-* **message** ArrayBuffer. The message content.
+* **message** Uint8Array. The message content.
 
 ```javascript
 topic.addEventListener('message', e => {
@@ -103,21 +103,21 @@ topic.addEventListener('message', e => {
 })
 ```
 
-### topic.send\(peerId, message\)
+### topic.send(peerId, message)
 
 Sends a message to the specified peer.
 
 * **peerId** Number. The target peer's identifier.
-* **message** ArrayBuffer. The message content.
+* **message** Uint8Array. The message content.
 * Returns **Void**.
 
 ```javascript
 topic.send(1, new TextEncoder('utf-8').encode('Hello!'))
 ```
 
-### topic.close\(\)
+### topic.close()
 
-Closes the topic instance. This will not close the topic globally; other topic instances \(e.g. in other tabs\) remain active.
+Closes the topic instance. This will not close the topic globally; other topic instances (e.g. in other tabs) remain active.
 
 * Returns **Void**.
 
@@ -151,6 +151,6 @@ peerEvents.addEventListener('leave', e => {
 })
 ```
 
-### peerEvents.close\(\)
+### peerEvents.close()
 
 Stops listening for messages on the PeerEvents instance. Does not stop connections from being created.

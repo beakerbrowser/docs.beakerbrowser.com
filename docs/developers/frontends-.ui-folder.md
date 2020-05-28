@@ -5,7 +5,7 @@ title: Frontends (.ui folder)
 The standard behavior of `hyper://` is to serve whichever file is referenced by the URL. This works fine for simple use-cases, but struggles with two use-cases:
 
 1. Sites which need a consistent theme and template applied across each page.
-2. Applications which need to serve interfaces even where a file does not exist \(as in the [Single Page Application](https://en.wikipedia.org/wiki/Single-page_application) pattern\).
+2. Applications which need to serve interfaces even where a file does not exist (as in the [Single Page Application](https://en.wikipedia.org/wiki/Single-page_application) pattern).
 
 Two solve this, the `hyper://` protocol supports a behavior called "Frontends."
 
@@ -15,7 +15,7 @@ A Frontend is simply an html file found at `/.ui/ui.html`. This file is used to 
 
 * No file exists at the target URL.
 * The target URL is a folder.
-* The "Accept" header includes text/html \(which indicates the browser is asking for a "page"\).
+* The "Accept" header includes text/html (which indicates the browser is asking for a "page").
 
 Because the Frontend effectively overrides all page-serving, it can render whatever the site author wants. A common pattern is to use JavaScript to read whatever file is referenced by `window.location.pathname` and then place that in the UI, as in this example snippet:
 

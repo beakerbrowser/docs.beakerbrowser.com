@@ -14,8 +14,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={classnames(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
+                'button button--secondary button--lg'
               )}
               to="/getting-started-with-beaker">
               Getting Started with Beaker
@@ -28,7 +27,7 @@ function Home() {
           <div className="container">
             <div className="row">
               <div className={classnames('col col--4', styles.section)}>
-                <h3 id="beginner">Beginner</h3>
+                <h2 id="beginner">Beginner</h2>
                 <ul>
                   <li><Link to="/beginner/creating-new-hyperdrives">Creating New Hyperdrives</Link></li>
                   <li><Link to="/beginner/changing-a-drive-title-or-thumbnail">Changing a Drive's Title or Thumbnail</Link></li>
@@ -41,7 +40,7 @@ function Home() {
                 </ul>
               </div>
               <div className={classnames('col col--4', styles.section)}>
-                <h3 id="intermediate">Intermediate</h3>
+                <h2 id="intermediate">Intermediate</h2>
                 <ul>
                   <li><Link to="/intermediate/your-profile-drive">Your Profile Drive</Link></li>
                   <li><Link to="/intermediate/your-address-book">Your Address Book</Link></li>
@@ -49,7 +48,7 @@ function Home() {
                 </ul>
               </div>
               <div className={classnames('col col--4', styles.section)}>
-                <h3 id="advanced">Advanced</h3>
+                <h2 id="advanced">Advanced</h2>
                 <ul>
                   <li><Link to="/advanced/webterm">Webterm</Link>. Beaker's terminal environment.</li>
                   <li><Link to="/advanced/creating-mounts">Creating Mounts</Link></li>
@@ -59,7 +58,7 @@ function Home() {
                 </ul>
               </div>
               <div className={classnames('col col--12', styles.section)}>
-                <h3 id="apis">APIs</h3>
+                <h2 id="apis">APIs</h2>
                 <ul>
                   <li><Link to="/apis/beaker.capabilities">beaker.capabilities</Link>. Create temporary, revocable URLs which map to hyperdrives.</li>
                   <li><Link to="/apis/beaker.contacts">beaker.contacts</Link>. Read and manage the user's address book.</li>
@@ -71,13 +70,13 @@ function Home() {
                 </ul>
               </div>
               <div className={classnames('col col--12', styles.section)}>
-                <h3 id="developers">Developers</h3>
+                <h2 id="developers">Developers</h2>
                 <ul>
                   <li><Link to="/developers/introduction-to-hyperdrive">Introduction to Hyperdrive</Link></li>
                   <li><Link to="/developers/index.json-manifest">Index.json Manifest</Link>. Information about the Hyperdrive manifest file, <code>index.json</code>.</li>
                   <li><Link to="/developers/content-type-negotiation">Content-Type Negotiation</Link>. How <code>hyper://</code> handles URLs without extensions.</li>
                   <li><Link to="/developers/frontends-.ui-folder">Frontends (.ui folder)</Link>. A tool to inject HTML output into every browsed resource.</li>
-                  <li><Link to="/developers/goto-files">.Goto Files</Link>. Files which act like shortcuts.</li>
+                  <li><Link to="/developers/goto-files">Goto Files</Link>. Files which act like shortcuts.</li>
                 </ul>
               </div>
             </div>

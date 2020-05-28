@@ -10,7 +10,7 @@ You can find your profile drive by looking at the top right of the browser. You 
 
 To change your name, bio, or picture, see [Changing a Drive's Title or Thumbnail](beginner/changing-a-drive-title-or-thumbnail.md).
 
-Some applications will use your profile to save and publish content. \(This is how the [Microblog Feed Template](https://beaker.dev/docs/templates/microblog-feed/) works.\) When they want to use your profile, you will be prompted with this interface:
+Some applications will use your profile to save and publish content. (This is how the [Microblog Feed Template](https://beaker.dev/docs/templates/microblog-feed/) works.) When they want to use your profile, you will be prompted with this interface:
 
 ![](/img/select-profile-modal.png)
 

@@ -3,7 +3,7 @@ title: beaker.markdown
 description: This API renders Markdown into HTML
 ---
 
-## beaker.markdown.toHTML\(md\)
+## beaker.markdown.toHTML(md)
 
 Renders Markdown into HTML.
 

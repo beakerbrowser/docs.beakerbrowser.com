@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Beaker Docs',
-  url: 'https://beaker-docs.netlify.app',
+  url: 'https://docs.beakerbrowser.com',
   baseUrl: '/',
   favicon: 'img/favicon.png',
   themeConfig: {
@@ -16,16 +16,19 @@ module.exports = {
           href: 'https://beakerbrowser.com/install/',
           label: 'Install',
           position: 'left',
+          target: '_self',
         },
         {
           href: 'https://beaker.dev/docs/templates/',
           label: 'Templates',
           position: 'left',
+          target: '_self',
         },
         {
           href: 'https://beaker.dev/docs/tutorials/',
           label: 'Tutorials',
           position: 'left',
+          target: '_self',
         },
         {
           href: 'https://github.com/beakerbrowser/beaker/discussions',
@@ -35,15 +38,14 @@ module.exports = {
       ],
     },
   },
-  plugins: ['docusaurus-lunr-search'],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/frabrunelle/beaker-docs/edit/master/',
-          routeBasePath: '/'
+          editUrl: 'https://github.com/beakerbrowser/docs.beakerbrowser.com/edit/master/',
+          routeBasePath: '/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

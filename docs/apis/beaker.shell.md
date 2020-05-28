@@ -2,7 +2,7 @@
 title: beaker.shell
 ---
 
-### beaker.shell.drivePropertiesDialog\(url\)
+### beaker.shell.drivePropertiesDialog(url)
 
 Create a dialog for editing the properties of the given hyperdrive.
 
@@ -13,7 +13,7 @@ Create a dialog for editing the properties of the given hyperdrive.
 await beaker.shell.drivePropertiesDialog(drive.url)
 ```
 
-### beaker.shell.selectFileDialog\(\[opts\]\)
+### beaker.shell.selectFileDialog(\[opts\])
 
 Create a dialog for selecting files or folders.
 
@@ -49,7 +49,7 @@ files[0].origin // => 'hyper://1234..56/'
 files[0].url    // => 'hyper://1234..56/imgs/foo.png'
 ```
 
-### beaker.shell.saveFileDialog\(\[opts\]\)
+### beaker.shell.saveFileDialog(\[opts\])
 
 Create a dialog for selecting where to save a file.
 
@@ -81,7 +81,7 @@ file.origin // => 'hyper://1234..56/'
 file.url    // => 'hyper://1234..56/imgs/foo.png'
 ```
 
-### beaker.shell.selectDriveDialog\(\[opts\]\)
+### beaker.shell.selectDriveDialog(\[opts\])
 
 Create a dialog for selecting a hyperdrive from the user's library.
 

@@ -8,7 +8,7 @@ Visit your hyperdrive and [open the editor](using-the-editor.md). Then expand th
 
 ![](/img/editor-list-files.png)
 
-Right-click in the files listing \(but not on a file\) and select "New file" or "New folder."
+Right-click in the files listing (but not on a file) and select "New file" or "New folder."
 
 ![](/img/editor-new-file-folder.png)
 
@@ -20,7 +20,7 @@ Visit your hyperdrive and open the files explorer by clicking "Explore Files."
 
 ![](/img/open-files-explorer.png)
 
-Right-click in the files listing \(but not on a file\) and select "New file" or "New folder."
+Right-click in the files listing (but not on a file) and select "New file" or "New folder."
 
 ![](/img/files-explorer-new-file-folder.png)
 

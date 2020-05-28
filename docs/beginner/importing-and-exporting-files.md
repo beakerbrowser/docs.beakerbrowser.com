@@ -8,7 +8,7 @@ Visit your hyperdrive and [open the editor](using-the-editor.md). Then expand th
 
 ![Open the files listing by clicking on the ellipsis icon.](/img/editor-list-files.png)
 
-Right-click in the files listing \(but not on a file\) and select "Import file\(s\)" or "Import folder\(s\)" to import files or folders, or "Export files" to export all files in the drive.
+Right-click in the files listing (but not on a file) and select "Import file(s)" or "Import folder(s)" to import files or folders, or "Export files" to export all files in the drive.
 
 ![](/img/editor-import-files.png)
 
@@ -22,7 +22,7 @@ Visit your hyperdrive and open the files explorer by clicking "Explore Files."
 
 ![](/img/open-files-explorer.png)
 
-Right-click in the files listing \(but not on a file\) and select "Import file\(s\)" or "Import folder\(s\)" to import files or folders, or "Export files" to export all files in the drive.
+Right-click in the files listing (but not on a file) and select "Import file(s)" or "Import folder(s)" to import files or folders, or "Export files" to export all files in the drive.
 
 ![](/img/files-explorer-import-files.png)
 

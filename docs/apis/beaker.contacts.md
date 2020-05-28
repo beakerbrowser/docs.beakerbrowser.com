@@ -3,7 +3,7 @@ title: beaker.contacts
 description: This API gives read access to the user's address book
 ---
 
-### beaker.contacts.requestProfile\(\)
+### beaker.contacts.requestProfile()
 
 Creates a dialog for selecting one of the user's profile drives.
 
@@ -16,7 +16,7 @@ Creates a dialog for selecting one of the user's profile drives.
 var profile = await beaker.contacts.requestProfile()
 ```
 
-### beaker.contacts.requestContact\(\)
+### beaker.contacts.requestContact()
 
 Creates a dialog for selecting one of the user's contacts in their address book.
 
@@ -29,7 +29,7 @@ Creates a dialog for selecting one of the user's contacts in their address book.
 var contact = await beaker.contacts.requestContact()
 ```
 
-### beaker.contacts.requestContacts\(\)
+### beaker.contacts.requestContacts()
 
 Creates a dialog for selecting multiple of the user's contacts in their address book.
 
@@ -42,7 +42,7 @@ Creates a dialog for selecting multiple of the user's contacts in their address 
 var contacts = await beaker.contacts.requestContacts()
 ```
 
-### beaker.contacts.list\(\)
+### beaker.contacts.list()
 
 Returns the full list of contacts in the address book. Requires user permission.
 
