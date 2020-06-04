@@ -51,15 +51,21 @@ var drive = await beaker.hyperdrive.createDrive({
 })
 ```
 
-### beaker.hyperdrive.forkDrive(url)
+### beaker.hyperdrive.forkDrive(url\[, opts\])
 
-Creates a "fork or clone drive" prompt. The user will use this to copy the files and settings of a hyperdrive into a new drive, optionally overriding some settings.
+Creates a "fork or copy drive" prompt. The user will use this to copy the files and settings of a hyperdrive into a new drive, optionally overriding some settings.
 
-* **url** String. The URL of the drive to clone.
+* **url** String. The URL of the drive to fork.
+* **opts** Object.
+  * **detached** Boolean. If false, will create an "attached" fork. If true, will create a detached copy. Default false.
+  * **title** String. Overrides the title. Only applies if `detached` is true.
+  * **description** String. Overrides the description. Only applies if `detached` is true.
+  * **prompt** Boolean. If true, shows the "fork" modal. If false, only asks the user for permission. Default true.
 * Returns **Promise&lt;Hyperdrive&gt;**.
 
 ```javascript
-var drive = await beaker.hyperdrive.forkDrive(existingDriveUrl)
+var myFork = await beaker.hyperdrive.forkDrive(existingDriveUrl)
+var myCopy = await beaker.hyperdrive.forkDrive(existingDriveUrl, {detached: true})
 ```
 
 ### beaker.hyperdrive.getInfo(url\[, opts\])
