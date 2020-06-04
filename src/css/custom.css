@@ -22,8 +22,16 @@
   --ifm-hero-text-color: white;
 }
 
-.admonition h5 {
-  color: transparent;
+.hero .button--secondary {
+  --ifm-button-background-color: white;
+}
+
+.admonition-heading {
+  display: none;
+}
+
+.admonition.admonition-caution {
+  --ifm-alert-color: #5b3b00;
 }
 
 .alert.alert--secondary a {
@@ -33,4 +41,24 @@
 
 .alert.alert--secondary a:hover {
   text-decoration: var(--ifm-link-hover-decoration);
+}
+
+.menu.menu_node_modules-\@docusaurus-theme-classic-src-theme-DocSidebar- {
+  font-size: 0.9em;
+}
+
+.docTitle_node_modules-\@docusaurus-theme-classic-src-theme-DocItem- {
+  font-size: 2.5em !important;
+}
+
+.markdown > h2 {
+  --ifm-h2-font-size: 1.7rem;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--ifm-leading);
+  border: 1px solid #bbb;
 }

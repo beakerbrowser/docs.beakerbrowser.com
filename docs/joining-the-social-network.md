@@ -10,15 +10,17 @@ Every user has a "Profile Hyperdrive" which represents them on the network. [Lea
 
 In this guide, we're going to personalize your profile drive, find some other users to add to your address book, get you listed in Beaker's User Directory, and say hello on your social media feed.
 
+---
+
 ## Customizing your profile drive
 
 During Beaker's setup, you filled out a name, picture, and bio for your profile. You can visit your profile drive by clicking your picture at the top right of the browser.
 
-![](/img/profile-button.png)
+<img class="centered" src="/img/profile-button.png" />
 
 You will find your profile drive is very plain. That's because we want you to build it! (Frankly it was a cost-cutting measure but don't tell anyone.)
 
-![](/img/social-network-profile-1.png)
+<img class="centered" src="/img/social-network-profile-1.png" />
 
 [Open the editor](beginner/using-the-editor.md) to see the source code:
 
@@ -38,28 +40,7 @@ You will find your profile drive is very plain. That's because we want you to bu
       <p>Your Bio</p>
     </main>
   </body>
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Cantarell, "Oxygen Sans", "Helvetica Neue", sans-serif;
-    }
-    main {
-      margin: 0 auto;
-      padding: 20px;
-      box-sizing: border-box;
-      max-width: 800px;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      height: 80px;
-    }
-    header img {
-      border-radius: 4px;
-      height: 80px;
-      margin-right: 20px;
-    }
-  </style>
+  <style>/* ... */</style>
 </html>
 ```
 
@@ -87,28 +68,7 @@ Let's add a button! This button will help other users add your profile drive to 
       beaker.contacts.requestAddContact(location.toString())
     }
   </script>
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Cantarell, "Oxygen Sans", "Helvetica Neue", sans-serif;
-    }
-    main {
-      margin: 0 auto;
-      padding: 20px;
-      box-sizing: border-box;
-      max-width: 800px;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      height: 80px;
-    }
-    header img {
-      border-radius: 4px;
-      height: 80px;
-      margin-right: 20px;
-    }
-  </style>
+  <style>/* ... */</style>
 </html>
 ```
 
@@ -116,7 +76,7 @@ Now your visitors have a quick way to follow your site! ([Read more about the be
 
 Your profile name, bio, and picture [can be changed using the "Drive Properties" dialog](beginner/changing-a-drive-title-or-thumbnail.md). The profile page won't update automatically, but we can add that!
 
-![](/img/social-network-profile-2.png)
+<img class="centered" src="/img/social-network-profile-2.png" />
 
 ```markup {21-26}
 <!doctype html>
@@ -146,32 +106,13 @@ Your profile name, bio, and picture [can be changed using the "Drive Properties"
     }
     setup()
   </script>
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Cantarell, "Oxygen Sans", "Helvetica Neue", sans-serif;
-    }
-    main {
-      margin: 0 auto;
-      padding: 20px;
-      box-sizing: border-box;
-      max-width: 800px;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      height: 80px;
-    }
-    header img {
-      border-radius: 4px;
-      height: 80px;
-      margin-right: 20px;
-    }
-  </style>
+  <style>/* ... */</style>
 </html>
 ```
 
 Now your profile drive will read your name and bio on load and display it on the page. ([Read more about the beaker.hyperdrive API.](apis/beaker.hyperdrive.md))
+
+---
 
 ## Finding other users
 
@@ -179,21 +120,25 @@ It's feeling pretty lonely in here! Let's find some people to add to [your addre
 
 Beaker maintains a [user directory](https://userlist.beakerbrowser.com/). You can find a link to it in the top right of the UI.
 
-![](/img/user-directory.png)
+<img class="centered" src="/img/user-directory.png" />
 
 Currently, the directory uses Twitter usernames to list profile drives, so you can find people by looking up their Twitter handle. (We'll add more ways to list drives soon!)
 
 You can visit the profiles by clicking on their names. If you find somebody you want to follow, click on the "Add to Address Book" button next to their name.
 
-![](/img/user-directory-entry.png)
+<img class="centered" src="/img/user-directory-entry.png" />
+
+---
 
 ## Adding yourself to the user directory
 
 To add yourself to the directory, click "Sign in via Twitter." You'll be directed to sign in and authorize our directory to see your Twitter profile. (Again: we'll add more ways to sign in soon!)
 
-![](/img/user-directory-add.png)
+<img class="centered" src="/img/user-directory-add.png" />
 
 After you've signed in, click "Add Your Listing." You'll be prompted to select your profile drive. Do that and your profile will be added!
+
+---
 
 ## Say hello on your feed
 
@@ -207,15 +152,15 @@ Visit the "Blahbity Blog" app at this URL: [hyper://a8e9bd0f4df60ed5246a1b1f53d5
 
 You'll see the following screen:
 
-![](/img/my-feed-not-signed-in.png)
+<img class="centered" src="/img/my-feed-not-signed-in.png" />
 
 After you select your profile, you'll see posts from people in your address book. Any posts you create will be written to your profile drive under the `/microblog` folder. Posts are Markdown by default (.md) but you can post .txt, HTML, images, video, and audio. (The HTML goes in an `<iframe>` just to be safe.)
 
-![](/img/my-feed.png)
-
-## You're now hooked in!
+<img class="centered" src="/img/my-feed.png" />
 
 You can make posts and see posts from your network, _and_ you can [fork the social media feed app](advanced/forking-hyperdrives.md) to change the styles and add new features.
+
+---
 
 ## What next?
 

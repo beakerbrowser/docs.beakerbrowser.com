@@ -12,15 +12,15 @@ There are two ways to set up folder sync.
 
 The first is when you [create a new hyperdrive](../creating-new-hyperdrives.md). You can select a folder to sync by pressing the "From Folder" button. This will cause the drive to be created with the contents of that folder.
 
-![](/img/folder-sync-create-drive.png)
+<img class="centered" src="/img/folder-sync-create-drive.png" />
 
 The second is by going to an existing drive, clicking the site-info button, then selecting "Sync with local folder" under the tools.
 
-![](/img/folder-sync-from-tools.png)
+<img class="centered" src="/img/folder-sync-from-tools.png" />
 
 Once folder sync is setup, you'll see an icon on the top right of your URL bar. You can click on that icon to open the folder sync controls.
 
-![](/img/folder-sync-controls.png)
+<img class="centered" src="/img/folder-sync-controls.png" />
 
 
 ## Manually syncing with the folder
@@ -37,6 +37,6 @@ If you want the folder to automatically sync when changes occur, toggle the "Aut
 
 Autosync only stays active as long as Beaker is running, so if you restart Beaker, you'll need to turn it back on.
 
-:::danger
+:::caution
 Be careful with autosync! If you're running a command that will generate folders for the first time like `git init` or `npm install` you should turn off autosync so that you can disable sync for the folders they generate.
 :::

@@ -38,23 +38,11 @@ A lot of Beaker's experience is the social network of personal websites. If I we
 
 If you want to start hacking on some websites, read up on [creating new hyperdrives](beginner/creating-new-hyperdrives.md) and [using the editor](beginner/using-the-editor.md). If you love the idea of remixing other people's work, you should [learn about forking hyperdrives](advanced/forking-hyperdrives.md). If you're a fan of command lines, [check out Beaker's Webterm](advanced/webterm.md).
 
-> **[Creating New Hyperdrives](beginner/creating-new-hyperdrives.md)**
-
-> **[Using the Editor](beginner/using-the-editor.md)**
-
-> **[Forking Hyperdrives](advanced/forking-hyperdrives.md)**
-
 The [Beaker Developer Portal](https://beaker.dev/) has a directory of useful resources for getting into code:
 
 * [Templates](https://beaker.dev/docs/templates/). Pre-made hyperdrives you can copy.
 * [Tutorials](https://beaker.dev/docs/tutorials/). More developer-focused guides to teach you about building on Beaker.
 
 You can also [find Beaker's new Web APIs here](/#apis).
-
-> **[beaker.contacts](apis/beaker.contacts.md)**
-
-> **[beaker.hyperdrive](apis/beaker.hyperdrive.md)**
-
-> **[beaker.peersockets](apis/beaker.peersockets.md)**
 
 If you're interested in learning technical details, [see the developer's Introduction to Hyperdrive](developers/introduction-to-hyperdrive.md).

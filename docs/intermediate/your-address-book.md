@@ -12,11 +12,11 @@ Your address book is private. Unless you give access to an application, nobody e
 
 When you open a new tab, you can access your address book by clicking on the "Address Book" link under your pinned bookmarks.
 
-![](/img/start-page-address-book.png)
+<img class="centered" src="/img/start-page-address-book.png" />
 
 To add a contact, click on the "+ New Contact" button.
 
-![](/img/add-contact-dialog.png)
+<img class="centered" src="/img/add-contact-dialog.png" />
 
 Enter the URL of your new contact's [profile drive](your-profile-drive.md) then click "Save." (You'll need to ask your friend for their URL or [find it in a directory](https://userlist.beakerbrowser.com/).)
 

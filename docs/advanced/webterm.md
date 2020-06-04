@@ -62,7 +62,7 @@ You can manage your installed Webterm commands by using the `commands` command. 
 
 To create a new command, run `commands create`. It will guide you through creation of your "command package" and provide a new drive with basic examples.
 
-:::danger
+:::caution
 Webterm commands run with full access to the browser's internal APIs and are therefore able to change anything. **Only install commands which you trust!**
 :::
 

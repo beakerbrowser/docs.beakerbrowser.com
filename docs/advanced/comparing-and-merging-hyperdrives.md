@@ -6,15 +6,15 @@ Sometimes it's useful to copy files between hyperdrives. This may be particularl
 
 To open the "Compare and Merge" interface, navigate to your hyperdrive, click on the Site Info button, go to the "Forks" submenu and click "Diff / Merge Original".
 
-![](/img/menu-diff-merge.png)
+<img class="centered" src="/img/menu-diff-merge.png" />
 
 This will open the compare interface.
 
-![](/img/diff-merge-interface.png)
+<img class="centered" src="/img/diff-merge-interface.png" />
 
 Choose the source drive on the top left and the target drive on the right using the dropdowns.
 
-![](/img/diff-merge-select-source.png)
+<img class="centered" src="/img/diff-merge-select-source.png" />
 
 ## Merging drives
 
@@ -22,7 +22,7 @@ Select the files you want to merge by clicking on the checkboxes in the left nav
 
 You can review the differences by selecting individual files in the left nav.
 
-![](/img/diff-merge-individual-file.png)
+<img class="centered" src="/img/diff-merge-individual-file.png" />
 
 The "Merge" will copy the files into the target drive, overwriting the selected files only.
 
@@ -30,6 +30,6 @@ The "Merge" will copy the files into the target drive, overwriting the selected 
 
 If you don't own the target drive, you'll see a screen like this:
 
-![](/img/diff-merge-not-owner.png)
+<img class="centered" src="/img/diff-merge-not-owner.png" />
 
 Send the URL to the drive owner. It will provide them with the same interface where they can review and merge the changes.
