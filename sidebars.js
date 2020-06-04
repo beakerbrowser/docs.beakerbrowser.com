@@ -19,6 +19,7 @@ module.exports = {
       'intermediate/your-profile-drive',
       'intermediate/your-address-book',
       'intermediate/your-system-drive',
+      'intermediate/syncing-with-folders'
     ],
     Advanced: [
       'advanced/webterm',

@@ -45,6 +45,7 @@ function Home() {
                   <li><Link to="/intermediate/your-profile-drive">Your Profile Drive</Link></li>
                   <li><Link to="/intermediate/your-address-book">Your Address Book</Link></li>
                   <li><Link to="/intermediate/your-system-drive">Your System Drive</Link></li>
+                  <li><Link to="/intermediate/syncing-with-folders">Syncing with Folders</Link></li>
                 </ul>
               </div>
               <div className={classnames('col col--4', styles.section)}>
