@@ -46,7 +46,7 @@ You will find your profile drive is very plain. That's because we want you to bu
 
 Let's add a button! This button will help other users add your profile drive to [their address book](intermediate/your-address-book.md). Here is the code:
 
-```markup {17-21}
+```markup {14,17-21}
 <!doctype html>
 <html>
   <head>
@@ -148,7 +148,10 @@ Now that you've added some people to [your address book](intermediate/your-addre
 This feed app will be another hyperdrive which reads and writes posts from your profile drive. It lives separately from your profile.
 :::
 
-Visit the "Blahbity Blog" app at this URL: [hyper://a8e9bd0f4df60ed5246a1b1f53d51a1feaeb1315266f769ac218436f12fda830/](hyper://a8e9bd0f4df60ed5246a1b1f53d51a1feaeb1315266f769ac218436f12fda830/)
+Visit the "Blahbity Blog" app at this URL:
+```text
+hyper://a8e9bd0f4df60ed5246a1b1f53d51a1feaeb1315266f769ac218436f12fda830/
+```
 
 You'll see the following screen:
 

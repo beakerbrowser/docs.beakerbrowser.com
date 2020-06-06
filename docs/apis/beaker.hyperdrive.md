@@ -205,7 +205,7 @@ var commentsOnBeaker = await beaker.hyperdrive.query({
 
 ### beaker.hyperdrive.diff(url, other\[, prefix, opts\])
 
-List the changes that have occurred between to versions of the drive.
+List the changes that have occurred between two versions of the drive.
 
 Note: this method can only compare drives to other versions of itself. It cannot be used to compare two different drives.
 
