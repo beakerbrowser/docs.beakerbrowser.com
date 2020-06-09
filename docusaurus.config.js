@@ -37,6 +37,10 @@ module.exports = {
         },
       ],
     },
+    algolia: {
+      apiKey: '8e801593bf85623c9a64dfd9470d06ab',
+      indexName: 'beakerbrowser'
+    }
   },
   presets: [
     [
