@@ -8,15 +8,15 @@ Only the creator of a hyperdrive can change its files. Visitors can only view th
 
 To create a new hyperdrive, click on the hamburger menu on the top right of the browser.
 
-<img class="centered" src="/img/open-browser-menu.png" />
+<img className="centered" src="/img/open-browser-menu.png" />
 
 Then select "New Hyperdrive..."
 
-<img class="centered" src="/img/new-hyperdrive.png" />
+<img className="centered" src="/img/new-hyperdrive.png" />
 
 You will be prompted to input a title and, optionally, a description. These will be used to identify the hyperdrive.
 
-<img class="centered" src="/img/new-hyperdrive-prompt.png" />
+<img className="centered" src="/img/new-hyperdrive-prompt.png" />
 
 You will be taken to the new hyperdrive which is (mostly) empty.
 

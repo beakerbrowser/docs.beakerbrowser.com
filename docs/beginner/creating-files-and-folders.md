@@ -6,11 +6,11 @@ title: Creating Files and Folders
 
 Visit your hyperdrive and [open the editor](using-the-editor.md). Then expand the files listing by clicking on the ellipsis icon.
 
-<img class="centered" src="/img/editor-list-files.png" />
+<img className="centered" src="/img/editor-list-files.png" />
 
 Right-click in the files listing (but not on a file) and select "New file" or "New folder."
 
-<img class="centered" src="/img/editor-new-file-folder.png" />
+<img className="centered" src="/img/editor-new-file-folder.png" />
 
 You will be prompted for the file or folder name. After choosing a name, the file/folder will appear in the listing.
 
@@ -18,11 +18,11 @@ You will be prompted for the file or folder name. After choosing a name, the fil
 
 Visit your hyperdrive and open the files explorer by clicking "Explore Files."
 
-<img class="centered" src="/img/open-files-explorer.png" />
+<img className="centered" src="/img/open-files-explorer.png" />
 
 Right-click in the files listing (but not on a file) and select "New file" or "New folder."
 
-<img class="centered" src="/img/files-explorer-new-file-folder.png" />
+<img className="centered" src="/img/files-explorer-new-file-folder.png" />
 
 You will be prompted for the file or folder name. After choosing a name, the file/folder will appear in the listing.
 
@@ -30,14 +30,14 @@ You will be prompted for the file or folder name. After choosing a name, the fil
 
 Visit your hyperdrive and open the terminal by clicking "Terminal."
 
-<img class="centered" src="/img/open-terminal.png" />
+<img className="centered" src="/img/open-terminal.png" />
 
 You can create a directory by typing `mkdir` followed by the folder name.
 
-<img class="centered" src="/img/terminal-mkdir.png" />
+<img className="centered" src="/img/terminal-mkdir.png" />
 
 You can create a file by typing `edit` followed by the filename.
 
-<img class="centered" src="/img/terminal-edit.png" />
+<img className="centered" src="/img/terminal-edit.png" />
 
 Using `edit` will open the editor where you can then write the content of the file.

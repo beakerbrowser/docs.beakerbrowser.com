@@ -12,52 +12,52 @@ A mounted drive will behave just like a subfolder. If you don't "own" the mounte
 
 Visit your hyperdrive and [open the editor](beginner/using-the-editor.md). Then expand the files listing by clicking on the folder icon.
 
-<img class="centered" src="/img/editor-list-files.png" />
+<img className="centered" src="/img/editor-list-files.png" />
 
 Right-click in the files listing (but not on a file) and select "New Mount."
 
-<img class="centered" src="/img/editor-new-mount.png" />
+<img className="centered" src="/img/editor-new-mount.png" />
 
 You will be prompted to select a hyperdrive to mount. If your target drive is not in the listing, enter the drive's URL in the input.
 
-<img class="centered" src="/img/select-drive-dialog.png" />
+<img className="centered" src="/img/select-drive-dialog.png" />
 
 You'll then be prompted to enter the mount's name. This is the name of the "folder" which the mount will represent. Choose a name and press "OK."
 
-<img class="centered" src="/img/mount-name-dialog.png" />
+<img className="centered" src="/img/mount-name-dialog.png" />
 
 Your new mount will appear in the editor's files listing.
 
-<img class="centered" src="/img/mount-in-editor.png" />
+<img className="centered" src="/img/mount-in-editor.png" />
 
 ## In the files explorer
 
 Visit your hyperdrive and open the files explorer by clicking "Explore Files."
 
-<img class="centered" src="/img/open-files-explorer.png" />
+<img className="centered" src="/img/open-files-explorer.png" />
 
 Right-click in the files listing (but not on a file) and select "New Mount."
 
-<img class="centered" src="/img/files-explorer-new-mount.png" />
+<img className="centered" src="/img/files-explorer-new-mount.png" />
 
 You will be prompted to select a hyperdrive to mount. If your target drive is not in the listing, enter the drive's URL in the input.
 
-<img class="centered" src="/img/select-drive-dialog.png" />
+<img className="centered" src="/img/select-drive-dialog.png" />
 
 You'll then be prompted to enter the mount's name. This is the name of the "folder" which the mount will represent. Choose a name and press "OK."
 
-<img class="centered" src="/img/mount-name-dialog.png" />
+<img className="centered" src="/img/mount-name-dialog.png" />
 
 Your new mount will appear in the explorer's files listing.
 
-<img class="centered" src="/img/mount-in-files-explorer.png" />
+<img className="centered" src="/img/mount-in-files-explorer.png" />
 
 ## In the terminal
 
 Visit your hyperdrive and open the terminal by clicking "Terminal."
 
-<img class="centered" src="/img/open-terminal.png" />
+<img className="centered" src="/img/open-terminal.png" />
 
 You can create a directory by typing `mount` followed by the drive URL then the mount's name.
 
-<img class="centered" src="/img/terminal-create-mount.png" />
+<img className="centered" src="/img/terminal-create-mount.png" />

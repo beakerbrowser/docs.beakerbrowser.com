@@ -12,15 +12,15 @@ There are two ways to set up folder sync.
 
 The first is when you [create a new hyperdrive](../creating-new-hyperdrives.md). You can select a folder to sync by pressing the "From Folder" button. This will cause the drive to be created with the contents of that folder.
 
-<img class="centered" src="/img/folder-sync-create-drive.png" />
+<img className="centered" src="/img/folder-sync-create-drive.png" />
 
 The second is by going to an existing drive, clicking the site-info button, then selecting "Sync with local folder" under the tools.
 
-<img class="centered" src="/img/folder-sync-from-tools.png" />
+<img className="centered" src="/img/folder-sync-from-tools.png" />
 
 Once folder sync is setup, you'll see an icon on the top right of your URL bar. You can click on that icon to open the folder sync controls.
 
-<img class="centered" src="/img/folder-sync-controls.png" />
+<img className="centered" src="/img/folder-sync-controls.png" />
 
 
 ## Manually syncing with the folder

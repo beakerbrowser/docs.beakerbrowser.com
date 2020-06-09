@@ -10,16 +10,16 @@ To open the editor:
 * Right-click on the page and select `Edit Source`, or
 * Press `Cmd+B` (macOS) or `Ctrl+B` (Windows / Linux).
 
-<img class="centered" src="/img/open-editor.png" />
+<img className="centered" src="/img/open-editor.png" />
 
 ## Saving files
 
 To save your work, press the "Save" button or press `Cmd+S` (macOS) or `Ctrl+S` (Windows / Linux) while the editor is focused. The page will automatically refresh with your updates.
 
-<img class="centered" src="/img/editor-save.png" />
+<img className="centered" src="/img/editor-save.png" />
 
 ## Navigating files in the hyperdrive
 
 To view a files listing for the current hyperdrive, click on the ellipsis icon in the top left.
 
-<img class="centered" src="/img/editor-list-files.png" />
+<img className="centered" src="/img/editor-list-files.png" />
