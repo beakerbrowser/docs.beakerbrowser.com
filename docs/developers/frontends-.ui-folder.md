@@ -27,8 +27,7 @@ Because the Frontend effectively overrides all page-serving, it can render whate
 async function setup () {
   var main = document.querySelector('main')
   if (location.pathname.endsWith('.html')) {
-    let self = new Hyperdrive(location.hostname)
-    let html = await self.readFile(location.pathname).catch(e => `<h1>404 not found<h1>`)
+    let html = await beaker.hyperdrive.readFile(location.pathname).catch(e => `<h1>404 not found<h1>`)
     main.innerHTML = html
   } else if (location.pathname.endsWith('.jpg')) {
     main.innerHTML = `<img src="${location.pathname}">`
