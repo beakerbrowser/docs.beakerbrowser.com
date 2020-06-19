@@ -166,10 +166,14 @@ Read the contents of a drive or drives across multiple specified paths. This fun
 * Returns **Promise&lt;Array&lt;Object&gt;&gt;**
   * **type** String. The type of the entry. Must be 'file', 'directory', or 'mount'.
   * **path** String. The path of the entry relative to the queried drive.
-  * **url** String. The URL of the entry relative to its _owning_ drive. Put another way, this is the _canonical_ URL of the entry. Entries which are in mounts will have a different origin than the querying drive's origin.
+  * **url** String. The URL of the entry relative to the queried drive.
   * **stat** Object. The entry's Stat object, see stat().
-  * **drive** String. The URL of the drive which owns the entry.
+  * **drive** String. The URL of the queried drive.
   * **mount** String. The URL of the target drive if the entry is a mount.
+  * **origin** Object.
+    * **path** String. The path of the entry relative to its owning drive.
+    * **drive** String. The URL of the entry's owning drive.
+    * **url** String. The URL of the entry relative to its owning drive.
 
 ```javascript
 var rootFiles = await beaker.hyperdrive.query({
