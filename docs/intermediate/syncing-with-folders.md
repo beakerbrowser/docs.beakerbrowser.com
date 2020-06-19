@@ -25,9 +25,13 @@ Once folder sync is setup, you'll see an icon on the top right of your URL bar. 
 
 ## Manually syncing with the folder
 
-The default behavior of folder sync is to manually sync the folder. This is to give you a chance to review the settings, and to make sure that your computer's resources aren't getting eaten up by watching your folders for changes.
+The default behavior of folder sync is to manually sync the folder.
 
-You'll notice a checkbox on the left of every file in the sync controls. You can uncheck files to stop them from being synced. This is useful for avoiding accidental imports (like your .git or node_modules folders) and for preserving data created by beaker (like the index.json manifest).
+<img className="centered" src="/img/folder-sync-restore.png" />
+
+On the right side of files marked for deletion, you'll find a "restore" button. You can click this to copy the file from the hyperdrive to the local folder.
+
+You can choose to skip files by expanding the "Skip items matching these rules" control. This control is similar to ".gitignore" files and supports using glob stars ("*"). Skipping files is useful for avoiding accidental imports (like your .git or node_modules folders) and for preserving data created by beaker (like the index.json manifest).
 
 When you're ready to sync the folder, click the big blue "Sync" button.
 
