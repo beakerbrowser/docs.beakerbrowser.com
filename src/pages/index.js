@@ -93,7 +93,7 @@ function Home() {
               <div className={classnames('col col--4', styles.section)}>
                 <h2 id="advanced">Advanced</h2>
                 <ul className={styles['secondary-links-list']}>
-                  <li><Link to="/advanced/webterm">Webterm</Link>. Beaker's terminal environment.</li>
+                  <li><Link to="/advanced/webterm">Webterm</Link></li>
                   <li><Link to="/advanced/creating-mounts">Creating Mounts</Link></li>
                   <li><Link to="/advanced/editing-file-metadata">Editing File Metadata</Link></li>
                   <li><Link to="/advanced/forking-hyperdrives">Forking Hyperdrives</Link></li>
