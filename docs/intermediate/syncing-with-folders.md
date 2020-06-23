@@ -6,24 +6,26 @@ Sometimes you want to work on a Hyperdrive using files that are outside of Beake
 
 In this case, you can use "folder sync."
 
-## Setting up folder sync
+## Setup: new drive
 
-There are two ways to set up folder sync.
-
-The first is when you [create a new hyperdrive](../creating-new-hyperdrives.md). You can select a folder to sync by pressing the "From Folder" button. This will cause the drive to be created with the contents of that folder.
+When you [create a new hyperdrive](../creating-new-hyperdrives.md), you can select a folder to sync by pressing the "From Folder" button. This will cause the drive to be created with the contents of that folder.
 
 <img className="centered" src="/img/folder-sync-create-drive.png" />
 
-The second is by going to an existing drive, clicking the site-info button, then selecting "Sync with local folder" under the tools.
+## Setup: existing drive
+
+To add folder-sync to an existing drive, click the site-info button and then select "Sync with local folder" under the tools.
 
 <img className="centered" src="/img/folder-sync-from-tools.png" />
+
+
+## Syncing with the folder
+
+<img className="centered" src="/img/folder-sync-button.png" />
 
 Once folder sync is setup, you'll see an icon on the top right of your URL bar. You can click on that icon to open the folder sync controls.
 
 <img className="centered" src="/img/folder-sync-controls.png" />
-
-
-## Manually syncing with the folder
 
 The default behavior of folder sync is to manually sync the folder.
 
