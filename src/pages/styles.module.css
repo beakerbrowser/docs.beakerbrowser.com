@@ -4,11 +4,18 @@
  * and scoped locally.
  */
 
- .heroBanner {
+.heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: #f3f3f3;
+  color: #333;
+  letter-spacing: 1.3px;
+}
+
+.heroBanner h1 {
+  margin: 0;
 }
 
 @media screen and (max-width: 966px) {
@@ -16,16 +23,105 @@
     padding: 2rem;
   }
 }
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.sections {
+  padding: 2rem 0;
 }
 
-.sections {
-  display: flex;
-  align-items: center;
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
   padding: 2rem 0;
+}
+
+.links-grid > a {
+  display: block;
+  border: 1px solid #bbb;
+  color: #333;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  transition: box-shadow 0.15s;
+}
+
+.links-grid > a img {
+  display: block;
   width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top left;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  opacity: 0.9;
+  transition: opacity 0.15s;
+}
+
+.links-grid > a span {
+  display: block;
+  padding: 0.8rem 1rem;
+}
+
+.links-grid > a:hover {
+  text-decoration: none;
+  box-shadow: 0 2px 3px #0002;
+}
+
+.links-grid > a:hover img {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .links-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.links-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.links-list a {
+  display: block;
+  border: 1px solid #bbb;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  transition: box-shadow 0.15s;
+}
+
+.links-list a:hover {
+  text-decoration: none;
+  box-shadow: 0 2px 3px #0002;
+}
+
+.links-list a span {
+  display: block;
+}
+
+.links-list a span:first-child {
+  font-weight: 500;
+  color: var(--ifm-link-color);
+}
+
+.links-list a span:last-child {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.secondary-links-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.secondary-links-list li {
+  background: #f3f3f3;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
 }
