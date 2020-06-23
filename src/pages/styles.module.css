@@ -5,12 +5,12 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 3rem 0 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: #f7f7f7;
-  color: #333;
+  background: transparent;
+  color: var(--ifm-font-color-base);
   letter-spacing: 1.3px;
 }
 
@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 2rem 2rem 1rem;
   }
 }
 
@@ -44,8 +44,8 @@
 
 .links-grid > a {
   display: block;
-  border: 1px solid #bbb;
-  color: #333;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  color: var(--ifm-font-color-base);
   font-weight: 500;
   letter-spacing: 0.75px;
   transition: box-shadow 0.15s;
@@ -57,7 +57,7 @@
   height: 200px;
   object-fit: cover;
   object-position: top left;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
   margin: 0;
   opacity: 0.9;
   transition: opacity 0.15s;
@@ -96,10 +96,10 @@
 
 .links-list a {
   display: block;
-  border: 1px solid #bbb;
+  border: 1px solid var(--ifm-color-emphasis-400);
   padding: 0.5rem 0.75rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--ifm-font-color-base);
   transition: box-shadow 0.15s;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .links-list a span:last-child {
-  color: #555;
+  color: var(--ifm-font-color-secondary);
   font-size: 0.9rem;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .secondary-links-list li {
-  background: #f3f3f3;
+  background: var(--ifm-color-emphasis-100);
   padding: 0.5rem 0.7rem;
   border-radius: 8px;
   margin-bottom: 0.5rem;
