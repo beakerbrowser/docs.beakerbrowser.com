@@ -56,7 +56,7 @@ function Home() {
             <div className={classnames('col col--6', styles.section)}>
               <h2 id="developers">Developers</h2>
               <ul className={styles['links-list']}>
-                <li><Link to="/developers/introduction-to-hyperdrive"><span>Introduction to Hyperdrive</span><span>todo</span></Link></li>
+                <li><Link to="/developers/introduction-to-hyperdrive"><span>Introduction to Hyperdrive</span><span>An overview of Beaker's peer-to-peer tech</span></Link></li>
                 <li><Link to="/developers/index.json-manifest"><span>Index.json Manifest</span><span>Information about the Hyperdrive manifest file, <code>index.json</code>.</span></Link></li>
                 <li><Link to="/developers/content-type-negotiation"><span>Content-Type Negotiation</span><span>How <code>hyper://</code> handles URLs without extensions.</span></Link></li>
                 <li><Link to="/developers/frontends-.ui-folder"><span>Frontends (.ui folder)</span><span>A tool to inject HTML output into every browsed resource.</span></Link></li>

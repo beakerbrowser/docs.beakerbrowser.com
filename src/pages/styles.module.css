@@ -9,13 +9,14 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: #f3f3f3;
+  background: #f7f7f7;
   color: #333;
   letter-spacing: 1.3px;
 }
 
 .heroBanner h1 {
   margin: 0;
+  font-size: 2.5rem;
 }
 
 @media screen and (max-width: 966px) {
@@ -23,6 +24,13 @@
     padding: 2rem;
   }
 }
+
+@media (max-width: 512px) {
+  .heroBanner h1 {
+    font-size: 1.75rem;
+  }
+}
+
 .sections {
   padding: 2rem 0;
 }
