@@ -122,8 +122,6 @@ Beaker maintains a [user directory](https://userlist.beakerbrowser.com/). You ca
 
 <img className="centered" src="/img/user-directory.png" />
 
-Currently, the directory uses Twitter usernames to list profile drives, so you can find people by looking up their Twitter handle. (We'll add more ways to list drives soon!)
-
 You can visit the profiles by clicking on their names. If you find somebody you want to follow, click on the "Add to Address Book" button next to their name.
 
 <img className="centered" src="/img/user-directory-entry.png" />
@@ -132,11 +130,9 @@ You can visit the profiles by clicking on their names. If you find somebody you 
 
 ## Adding yourself to the user directory
 
-To add yourself to the directory, click "Sign in via Twitter." You'll be directed to sign in and authorize our directory to see your Twitter profile. (Again: we'll add more ways to sign in soon!)
-
 <img className="centered" src="/img/user-directory-add.png" />
 
-After you've signed in, click "Add Your Listing." You'll be prompted to select your profile drive. Do that and your profile will be added!
+To add yourself to the directory, click "+ Add Your Profile." You'll be prompted to select your profile drive. Do that and your profile will be added!
 
 ---
 
