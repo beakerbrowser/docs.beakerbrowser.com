@@ -48,6 +48,7 @@ function Home() {
                 <li><Link to="/apis/beaker.contacts"><span>beaker.contacts</span><span>Read and manage the user's address book.</span></Link></li>
                 <li><Link to="/apis/beaker.hyperdrive"><span>beaker.hyperdrive</span><span>Methods to read and write Hyperdrive data.</span></Link></li>
                 <li><Link to="/apis/beaker.markdown"><span>beaker.markdown</span><span>Render Markdown into HTML.</span></Link></li>
+                <li><Link to="/apis/beaker.panes"><span>beaker.panes</span><span>Interact with other active panes in the tab.</span></Link></li>
                 <li><Link to="/apis/beaker.peersockets"><span>beaker.peersockets</span><span>Send and receive messages to peers on a hyperdrive.</span></Link></li>
                 <li><Link to="/apis/beaker.shell"><span>beaker.shell</span><span>Global user interface methods, typically user dialogs.</span></Link></li>
                 <li><Link to="/apis/beaker.terminal"><span>beaker.terminal</span><span>Register commands which are accessible from Webterm.</span></Link></li>
@@ -74,7 +75,6 @@ function Home() {
                   <li><Link to="/beginner/creating-new-hyperdrives">Creating New Hyperdrives</Link></li>
                   <li><Link to="/beginner/changing-a-drive-title-or-thumbnail">Changing a Drive's Title or Thumbnail</Link></li>
                   <li><Link to="/beginner/using-the-editor">Using the Editor</Link></li>
-                  <li><Link to="/beginner/detaching-the-editor">Detaching the Editor</Link></li>
                   <li><Link to="/beginner/creating-files-and-folders">Creating Files and Folders</Link></li>
                   <li><Link to="/beginner/importing-and-exporting-files">Importing and Exporting Files</Link></li>
                   <li><Link to="/beginner/sharing-hyperdrives">Sharing Hyperdrives</Link></li>
