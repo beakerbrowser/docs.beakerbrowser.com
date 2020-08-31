@@ -1,5 +1,5 @@
 import React from 'react';
-import classnames from 'classnames';
+import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 function Home() {
   return (
     <Layout>
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
+      <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">Beaker Documentation</h1>
         </div>
@@ -41,7 +41,7 @@ function Home() {
             </Link>
           </section>
           <div className="row">
-            <div className={classnames('col col--6', styles.section)}>
+            <div className={clsx('col col--6', styles.section)}>
               <h2 id="apis">APIs</h2>
               <ul className={styles['links-list']}>
                 <li><Link to="/apis/beaker.capabilities"><span>beaker.capabilities</span><span>Create temporary, revocable URLs which map to hyperdrives.</span></Link></li>
@@ -54,7 +54,7 @@ function Home() {
                 <li><Link to="/apis/beaker.terminal"><span>beaker.terminal</span><span>Register commands which are accessible from Webterm.</span></Link></li>
               </ul>
             </div>
-            <div className={classnames('col col--6', styles.section)}>
+            <div className={clsx('col col--6', styles.section)}>
               <h2 id="developers">Developers</h2>
               <ul className={styles['links-list']}>
                 <li><Link to="/developers/introduction-to-hyperdrive"><span>Introduction to Hyperdrive</span><span>An overview of Beaker's peer-to-peer tech</span></Link></li>
@@ -69,7 +69,7 @@ function Home() {
         <section className={styles.sections}>
           <div className="container">
             <div className="row">
-              <div className={classnames('col col--4', styles.section)}>
+              <div className={clsx('col col--4', styles.section)}>
                 <h2 id="beginner">Beginner</h2>
                 <ul className={styles['secondary-links-list']}>
                   <li><Link to="/beginner/creating-new-hyperdrives">Creating New Hyperdrives</Link></li>
@@ -81,7 +81,7 @@ function Home() {
                   <li><Link to="/beginner/hosting-hyperdrives">Hosting Hyperdrives</Link></li>
                 </ul>
               </div>
-              <div className={classnames('col col--4', styles.section)}>
+              <div className={clsx('col col--4', styles.section)}>
                 <h2 id="intermediate">Intermediate</h2>
                 <ul className={styles['secondary-links-list']}>
                   <li><Link to="/intermediate/your-profile-drive">Your Profile Drive</Link></li>
@@ -90,7 +90,7 @@ function Home() {
                   <li><Link to="/intermediate/syncing-with-folders">Syncing with Folders</Link></li>
                 </ul>
               </div>
-              <div className={classnames('col col--4', styles.section)}>
+              <div className={clsx('col col--4', styles.section)}>
                 <h2 id="advanced">Advanced</h2>
                 <ul className={styles['secondary-links-list']}>
                   <li><Link to="/advanced/webterm">Webterm</Link></li>
