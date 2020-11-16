@@ -14,7 +14,7 @@ Then select "New Hyperdrive..."
 
 <img className="centered" src="/img/new-hyperdrive.png" />
 
-You will be prompted to input a title and, optionally, a description. These will be used to identify the hyperdrive.
+You will be prompted to input a title and, optionally, a description and some tags. These will be used to identify the hyperdrive. (The tags are private, but the title and description are public.)
 
 <img className="centered" src="/img/new-hyperdrive-prompt.png" />
 

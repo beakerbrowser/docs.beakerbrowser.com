@@ -16,13 +16,13 @@ The terminal uses a command syntax that's similar to "bash" in Unix.
 command [-s|--switch {param}] {param1} {param2}
 ```
 
-At this stage, there is no piping or sub-invocations. All commands translate to JavaScript functions which can respond with HTML interfaces.
+At this stage, there is no piping or sub-invocations. All commands translate to JavaScript functions which can be created using the [beaker.terminal API](../apis/beaker.terminal).
 
 ## Builtin commands
 
 You can type `help` at any time to see a full list of available commands. Here are some of the useful builtins:
 
-* **open**. Navigate the terminal and the attached page to the given path or URL.
+* **go**. Navigate the terminal and the attached page to the given path or URL.
 * **cd**. Navigate the terminal to the given path or URL.
 * Filesystem
   * **ls**. List the files in a given location.
@@ -35,121 +35,60 @@ You can type `help` at any time to see a full list of available commands. Here a
   * **meta**. View or edit the metadata of a file.
   * **cat**. View the contents of a file.
   * **edit**. Edit a file.
-* Page Interactions
-  * **page exec**. Execute JavaScript on the current page.
-  * **page inject**. Inject CSS into the current page.
 * Command Management
-  * **commands ls**. List installed command packages.
-  * **commands install**. Install a new command package.
-  * **commands create**. Create a new command package.
+  * **term ls**. List installed command pages.
+  * **term install**. Install a new command page.
 
 ## Environment variables
 
 Webterm supports environment variables in its command invocations. These are words prefixed by a '$' dollar sign.
 
 ```text
-echo $pwd
+echo $cwd
 ```
 
 To view and modify the environment variables, use the `env` command. By default, Webterm defines the following environment vars:
 
 * `$@` The URL of the current page which Webterm is attached to.
-* `$pwd` The URL of the current location which Webterm is working in.
+* `$cwd` The URL of the current location which Webterm is working in.
 
 ## Creating and installing new commands
 
-You can manage your installed Webterm commands by using the `commands` command. Commands are bundled into "command package" hyperdrives.
+You can manage your installed Webterm commands by using the `term` command. Commands are provided by web pages which use the [beaker.terminal API](../apis/beaker.terminal) to register commands.
 
-To create a new command, run `commands create`. It will guide you through creation of your "command package" and provide a new drive with basic examples.
+You can invoke commands two ways: while visiting the page using the `@` syntax, or by installing the page using `term install`.
 
-:::caution
-Webterm commands run with full access to the browser's internal APIs and are therefore able to change anything. **Only install commands which you trust!**
-:::
+Consider an example page at `https://example.com/term.html` which has the following code:
 
-Command invocations are automatically parsed and passed to the functions that your package's `index.js` file exports. You will need to include an `index.json` that provides help and some parsing guidelines for the options. An example `index.json`:
-
-```json
-{
-  "type": "webterm.sh/cmd-pkg",
-  "title": "My Commands",
-  "commands": [
-    {
-      "name": "hello",
-      "help": "Says hello",
-      "usage": "hello [-u] [{who}]",
-      "options": [
-        {
-          "name": "uppercase",
-          "abbr": "u",
-          "help": "Output in all-uppercase",
-          "boolean": true,
-          "default": false
-        }
-      ]
-    }
+```html
+<script>
+beaker.terminal.registerCommand({
+  name: 'alert',
+  help: 'Display an alert box',
+  usage: 'alert {message}',
+  async handle (opts = {}, message = '') {
+    alert(message)
   }
-}
+})
+</script>
 ```
 
-And its matching `index.js`:
-
-```javascript
-export async function hello (opts = {}, who = 'world') {
-  var str = `hello ${who}`
-  if (opts.uppercase) str = str.toUpperCase()
-  return str
-}
-```
-
-The "commands" section is an array of objects with the following attributes:
-
-* **name**. The name of the command.
-* **help**. An optional explanation of the command.
-* **usage**. An optional summary of the command's parameters.
-* **options**. An optional array of the switch-options which can be provided. Each object can have the following attributes:
-  * **name**. The long name of the option.
-  * **abbr**. An optional short name for the option.
-  * **help**. An explanation of the option.
-  * **boolean**. If true, the option does not accept a value.
-  * **default**. The default value of the option if not specified by the invocation.
-* **subcommands**. An optional array of objects describing subcommands of this command. Use this when the command is actually a prefix to multiple commands.
-  * The objects in this array use the same schema as the "commands" array.
-
-Command are invoked with a `this` object that is populated with some custom APIs:
-
-* env
-  * `getAll()`. Returns an object containing all current env variables.
-  * `get(key)`. Returns the value of the given env variable.
-  * `set(key, value)`. Sets the given env variable's value.
-  * `goto(location)`. Sets the CWD.
-  * `focus()`. Focuses the terminal prompt.
-  * `resolve(location)`. Resolves the given location against the CWD.
-* page
-  * `goto (location, {newTab})`. Navigates the attached page to the given location. If `newTab` is true, creates a new tab.
-  * `refresh()`. Refreshes the current page.
-  * `exec(js)`. Executes the given javascript in the current page.
-  * `inject(css)`. Injects the given styles in the current page. Returns an ID which can be used in uninject.
-  * `uninject(id)`. Uninjects styles which had previously been injected.
-* `out(...args)`. Outputs the arguments to the Webterm console. Can be provided HTML elements.
-* `prompt(txt, defaultValue)`. Runs an input prompt.
-
-Some example usages:
-
-```javascript
-this.out('Hello world!')
-this.page.exec('alert("pwned!")')
-this.env.goto('https://beakerbrowser.com')
-```
-
-## Page commands
-
-Pages can export their own commands, which they define using the [beaker.terminal API](apis/beaker.terminal.md). Page commands are prefixed with an '@' symbol.
+The simple way to invoke the command would be to visit `https://example.com/term.html`, open webterm, and type
 
 ```text
-@open-issue 1
-@login --user pfrazee --password hunter2
-@help
-@go_inbox
+@alert "Hello world!"
 ```
 
-Unlike normal Webterm commands, page commands run on the page and therefore have no special privileges. They also do not have access to the `env`, `page`, `out`, and other APIs attached to the `this` object.
+If you want to be able to invoke the command from anywhere, you could install the command like so:
+
+```text
+term install example https://example.com/term.html
+```
+
+This would install the page's commands under the "example" namespace. You could then invoke alert() from anywhere by typing:
+
+```text
+example alert "Hello world!"
+```
+
+If you invoke a command using the `@` syntax, it will run the command within the page as its being visited. If you install the command, then calling it will cause the page to be opened in an invisible window and executed.

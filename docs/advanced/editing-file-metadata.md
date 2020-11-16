@@ -17,23 +17,3 @@ A dropdown will appear with the metadata keys on the left and the values on the 
 <img className="centered" src="/img/editor-file-metadata-dropdown.png" />
 
 When you are finished, click "Save" to write the changes.
-
-## In the terminal
-
-Visit your hyperdrive and open the terminal by clicking "Terminal."
-
-<img className="centered" src="/img/open-terminal.png" />
-
-Get all metadata values for a file by entering `meta {filename}`
-
-<img className="centered" src="/img/terminal-all-meta.png" />
-
-Get a single metadata value for a file by entering `meta {filename} {key}`
-
-<img className="centered" src="/img/terminal-one-meta.png" />
-
-Change a single metadata value by entering `meta {filename} {key} {value}`
-
-<img className="centered" src="/img/terminal-set-meta.png" />
-
-If your value has spaces, wrap it in quotes.

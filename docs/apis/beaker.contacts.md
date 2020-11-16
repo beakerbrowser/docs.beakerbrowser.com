@@ -3,6 +3,12 @@ title: beaker.contacts
 description: This API gives read access to the user's address book
 ---
 
+:::note
+This API was deprecated.
+It now calls to [beaker.shell APIs](beaker.shell.md) to access drives saved with the "contact" tag.
+Applications built using these APIs should not break, but it's recommended to switch to using `beaker.shell`.
+:::
+
 ### beaker.contacts.requestProfile()
 
 Creates a dialog for selecting one of the user's profile drives.

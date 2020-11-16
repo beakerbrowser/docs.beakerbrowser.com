@@ -6,11 +6,8 @@ The builtin editor is a quick way to view and edit the source code of a hyperdri
 
 To open the editor:
 
-* Click on the `Editor` button in the top left of the browser,
 * Right-click on the page and select `Edit Source`, or
 * Press `Cmd+B` (macOS) or `Ctrl+B` (Windows / Linux).
-
-<img className="centered" src="/img/open-editor.png" />
 
 ## Saving files
 

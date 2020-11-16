@@ -1,9 +1,7 @@
 module.exports = {
   docs: {
     Welcome: [
-      'getting-started-with-beaker',
-      'joining-the-social-network',
-      'why-use-beaker',
+      'getting-started-with-beaker'
     ],
     Beginner: [
       'beginner/creating-new-hyperdrives',
@@ -15,8 +13,6 @@ module.exports = {
       'beginner/hosting-hyperdrives',
     ],
     Intermediate: [
-      'intermediate/your-profile-drive',
-      'intermediate/your-address-book',
       'intermediate/your-system-drive',
       'intermediate/syncing-with-folders'
     ],

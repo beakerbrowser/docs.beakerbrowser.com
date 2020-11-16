@@ -89,14 +89,46 @@ Create a dialog for selecting a hyperdrive from the user's library.
   * **title** String. The title of the selection dialog.
   * **buttonLabel** String. The label on the "OK" button.
   * **writable** Boolean. If true, only accept writable drives. If false, only accept unwritable drives.
-  * **type** String. The type of the drive to select.
-* Returns **Promise&lt;String&gt;**
+  * **allowMultiple** Boolean. If true, allow multiple drives to be selected.
+  * **tag** String. Filters the drives to items that include the given tag.
+* Returns **Promise&lt;String|Array&lt;String&gt;&gt;**
 
 ```javascript
 var driveUrl = await beaker.shell.selectDriveDialog({
-  title: 'Select Your Website',
-  buttonLabel: 'Select Site',
+  title: 'Select A Contact',
+  buttonLabel: 'Select Contact',
   writable: true,
-  type: 'website'
+  tag: 'contact'
 })
 ```
+
+### beaker.shell.saveDriveDialog(url\[, opts\])
+
+Create a dialog for saving a hyperdrive to the user's library.
+
+* **url** String. The URL of the hyperdrive to save.
+* **opts** Object
+  * **tags** String. A space-separated list of tags to suggest saving the hyperdrive under.
+
+```javascript
+var driveUrl = await beaker.shell.saveDriveDialog(drive.url, {tags: 'website fun'})
+```
+
+### beaker.shell.listDrives(\[opts\])
+
+List saved drives according to a filter. Requires user to grant permission.
+
+* **opts** Object
+  * **tag** String. Only list drives saved with the given tag.
+  * **writable** Boolean. Only list drives which are or aren't writable.
+
+
+```javascript
+var contacts = await beaker.shell.listDrive({writable: false, tag: 'contact'})
+```
+
+### beaker.shell.unsaveDrive(url)
+
+Remove a hyperdrive from the user's library. Requires user to grant permission.
+
+* **url** String. The URL of the hyperdrive to unsave.

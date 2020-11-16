@@ -51,13 +51,3 @@ You'll then be prompted to enter the mount's name. This is the name of the "fold
 Your new mount will appear in the explorer's files listing.
 
 <img className="centered" src="/img/mount-in-files-explorer.png" />
-
-## In the terminal
-
-Visit your hyperdrive and open the terminal by clicking "Terminal."
-
-<img className="centered" src="/img/open-terminal.png" />
-
-You can create a directory by typing `mount` followed by the drive URL then the mount's name.
-
-<img className="centered" src="/img/terminal-create-mount.png" />

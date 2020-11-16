@@ -19,18 +19,6 @@ module.exports = {
           target: '_self',
         },
         {
-          href: 'https://beaker.dev/docs/templates/',
-          label: 'Templates',
-          position: 'left',
-          target: '_self',
-        },
-        {
-          href: 'https://beaker.dev/docs/tutorials/',
-          label: 'Tutorials',
-          position: 'left',
-          target: '_self',
-        },
-        {
           href: 'https://github.com/beakerbrowser/beaker/discussions',
           label: 'Ask Questions',
           position: 'left',

@@ -16,8 +16,8 @@ Visit the drive, then click on the Site Info button (the blue button on the left
 
 <img className="centered" src="/img/drive-properties-in-siteinfo.png" />
 
-## From "My Drives"
+## From "My Library"
 
-Open a new tab and look in the "My Drives" section. Right-click on your target drive and select "Drive Properties."
+Open a new tab and look for the "My Library" link in the top right. In the "Hyperdrives" section, right-click on your target drive and select "Drive Properties."
 
 <img className="centered" src="/img/drive-properties-in-my-drives.png" />

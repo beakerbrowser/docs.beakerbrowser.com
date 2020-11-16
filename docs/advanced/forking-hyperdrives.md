@@ -37,6 +37,6 @@ To view all forks of a site, click on the Site Info button and click on the "For
 
 From the Site Info panel you can see a list of available forks. You can navigate between them and the original, delete them, and create new forks.
 
-You can view the forks of a hyperdrive in "My Drives" by clicking on the fork number in the listing.
+You can view the forks of a hyperdrive in "My Library" by clicking on the fork number in the listing.
 
 <img className="centered" src="/img/my-drives-forks.png" />
