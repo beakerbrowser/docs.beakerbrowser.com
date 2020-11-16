@@ -8,7 +8,7 @@ In this case, you can use "folder sync."
 
 ## Setup: new drive
 
-When you [create a new hyperdrive](../creating-new-hyperdrives.md), you can select a folder to sync by pressing the "From Folder" button. This will cause the drive to be created with the contents of that folder.
+When you [create a new hyperdrive](beginner/creating-new-hyperdrives.md), you can select a folder to sync by pressing the "From Folder" button. This will cause the drive to be created with the contents of that folder.
 
 <img className="centered" src="/img/folder-sync-create-drive.png" />
 

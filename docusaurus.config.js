@@ -11,7 +11,7 @@ module.exports = {
         src: 'img/logo.svg',
         srcDark: 'img/logo-white.svg'
       },
-      links: [
+      items: [
         {
           href: 'https://beakerbrowser.com/install/',
           label: 'Install',
