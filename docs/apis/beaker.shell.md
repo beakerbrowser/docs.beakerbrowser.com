@@ -91,14 +91,18 @@ Create a dialog for selecting a hyperdrive from the user's library.
   * **writable** Boolean. If true, only accept writable drives. If false, only accept unwritable drives.
   * **allowMultiple** Boolean. If true, allow multiple drives to be selected.
   * **tag** String. Filters the drives to items that include the given tag.
+  * **template** String. The URL of a hyperdrive which will be used as the template for a new drive if the user chooses "new drive."
 * Returns **Promise&lt;String|Array&lt;String&gt;&gt;**
+
+If a `.template` is specified, `.writable` is not `false`, and no drives in the user's library matches the filtering criteria, the modal will automatically jump to the "create drive" flow.
 
 ```javascript
 var driveUrl = await beaker.shell.selectDriveDialog({
-  title: 'Select A Contact',
-  buttonLabel: 'Select Contact',
+  title: 'Select Your Profile',
+  buttonLabel: 'Select Profile',
   writable: true,
-  tag: 'contact'
+  tag: 'contact',
+  template: 'hyper://12345..af'
 })
 ```
 
