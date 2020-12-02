@@ -75,7 +75,7 @@ See also: [stat()](apis/beaker.hyperdrive.md#beakerhyperdrivestaturl-opts), [mou
 
 Every file has key-value metadata which can be used to store useful information. For example, a common metadata K/V is the `href` key, which is used to indicate that a file is written in reference to some other resource on the Internet.
 
-See also: [stat()](apis/beaker.hyperdrive.md#beakerhyperdrivestaturl-opts), [writeFile()](apis/beaker.hyperdrive.md#beakerhyperdrivewritefileurl-data-opts), [updateMetadata()](apis/beaker.hyperdrive.md#beakerhyperdriveupdatemetadataurl-metadata-opts), [deleteMetadata()](apis/beakerhyperdrivedeletemetadataurl-keys-opts)
+See also: [stat()](apis/beaker.hyperdrive.md#beakerhyperdrivestaturl-opts), [writeFile()](apis/beaker.hyperdrive.md#beakerhyperdrivewritefileurl-data-opts), [updateMetadata()](apis/beaker.hyperdrive.md#beakerhyperdriveupdatemetadataurl-metadata-opts), [deleteMetadata()](/apis/beaker.hyperdrive#beakerhyperdrivedeletemetadataurl-keys-opts)
 
 ### Querying
 

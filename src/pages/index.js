@@ -84,8 +84,6 @@ function Home() {
               <div className={clsx('col col--4', styles.section)}>
                 <h2 id="intermediate">Intermediate</h2>
                 <ul className={styles['secondary-links-list']}>
-                  <li><Link to="/intermediate/your-profile-drive">Your Profile Drive</Link></li>
-                  <li><Link to="/intermediate/your-address-book">Your Address Book</Link></li>
                   <li><Link to="/intermediate/your-system-drive">Your System Drive</Link></li>
                   <li><Link to="/intermediate/syncing-with-folders">Syncing with Folders</Link></li>
                 </ul>
