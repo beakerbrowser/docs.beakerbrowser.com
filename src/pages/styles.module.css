@@ -39,7 +39,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
-  padding: 2rem 0;
+  padding: 1rem 0 2rem;
 }
 
 .links-grid > a {
@@ -87,6 +87,20 @@
   .links-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.links-grid-intro {
+  composes: links-grid;
+  text-align: center;
+}
+
+.links-grid-intro a {
+  border: 0;
+  background: var(--docsearch-highlight-color);
+  color: #fff;
+  font-size: 19px;
+  border-radius: 4px;
+  align-self: center;
 }
 
 .links-list {

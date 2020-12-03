@@ -14,6 +14,19 @@ function Home() {
       </header>
       <main>
         <div className="container">
+          <h2 id="intro">Introduction</h2>
+          <section className={styles['links-grid-intro']}>
+            <Link to="/faq#why-is-beaker-different">
+              <span>Why is Beaker different?</span>
+            </Link>
+            <Link to="/faq#what-does-beaker-do-better-than-other-browsers">
+              <span>What does Beaker do better?</span>
+            </Link>
+            <Link to="/faq#what-does-a-peer-to-peer-browser-make-possible">
+              <span>What does "p2p" make possible?</span>
+            </Link>
+          </section>
+          <h2 id="highlighted-docs">Highlighted Docs</h2>
           <section className={styles['links-grid']}>
             <Link to="/beginner/creating-new-hyperdrives">
               <img src="/img/create-drive-link-card.png" /> <span>Creating New Hyperdrives</span>

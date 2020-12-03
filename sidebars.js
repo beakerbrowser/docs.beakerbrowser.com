@@ -1,7 +1,8 @@
 module.exports = {
   docs: {
     Welcome: [
-      'getting-started-with-beaker'
+      'getting-started-with-beaker',
+      'faq'
     ],
     Beginner: [
       'beginner/creating-new-hyperdrives',
