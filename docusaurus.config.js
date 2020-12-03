@@ -4,6 +4,7 @@ module.exports = {
   baseUrl: '/',
   favicon: 'img/favicon.png',
   themeConfig: {
+    image: 'img/twitter-card.png',
     navbar: {
       title: 'Beaker Docs',
       logo: {
