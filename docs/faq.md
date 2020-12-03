@@ -19,7 +19,7 @@ You can create a Hyperdrive from Beaker, add your website's HTML, and then share
 
 ## What does Beaker do better than other browsers?
 
-Beaker makes building a Website weirdly easy. We have a [builtin editor](/beginner/using-the-editor), tools to [sync folders with your website](http://localhost:3000/intermediate/syncing-with-folders), and some [pretty fun APIs for reading and writing the files in your website](/apis/beaker.hyperdrive).
+Beaker makes building a Website weirdly easy. We have a [builtin editor](/beginner/using-the-editor), tools to [sync folders with your website](/intermediate/syncing-with-folders), and some [pretty fun APIs for reading and writing the files in your website](/apis/beaker.hyperdrive).
 
 If you're a teacher in a digital classroom, especially if you're teaching web development, Beaker is really handy. Your students don't need to learn Git, the commandline, or any other piece of server administration. They can download Beaker and get straight into the business of building Websites.
 
