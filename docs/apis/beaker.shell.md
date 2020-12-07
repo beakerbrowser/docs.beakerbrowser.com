@@ -73,8 +73,7 @@ var file = await beaker.shell.saveFileDialog({
   title: 'Save Image To...',
   buttonLabel: 'Save Image',
   defaultFilename: 'image.png',
-  extension: 'png',
-  disallowCreate: true
+  extension: 'png'
 })
 file.path   // => '/imgs/foo.png'
 file.origin // => 'hyper://1234..56/'
