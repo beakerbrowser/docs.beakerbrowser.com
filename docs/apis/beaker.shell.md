@@ -131,6 +131,17 @@ List saved drives according to a filter. Requires user to grant permission.
 var contacts = await beaker.shell.listDrive({writable: false, tag: 'contact'})
 ```
 
+### beaker.shell.tagDrive(url, tags)
+
+Ask the user to add tags to the given hyperdrive. If the drive isn't already saved, will trigger the "save drive" dialog.
+
+* **url** String. The URL of the hyperdrive to save.
+* **tags** String. A space-separated list of tags to assign the drive.
+
+```javascript
+var driveUrl = await beaker.shell.tagDrive(drive.url, 'website fun')
+```
+
 ### beaker.shell.unsaveDrive(url)
 
 Remove a hyperdrive from the user's library. Requires user to grant permission.

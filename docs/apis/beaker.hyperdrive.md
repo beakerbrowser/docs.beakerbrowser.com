@@ -41,6 +41,7 @@ Create a new Hyperdrive.
 * **settings** Object.
   * **title** String. The title of the hyperdrive.
   * **description** String. The description of the hyperdrive.
+  * **tags** String. A space-separated list of tags to assign to the drive in the library.
   * **prompt** Boolean. Should the creation prompt show? If false, permission will still be requested.
 * Returns **Promise&lt;Hyperdrive&gt;**.
 
@@ -60,6 +61,7 @@ Creates a "fork or copy drive" prompt. The user will use this to copy the files 
   * **detached** Boolean. If false, will create an "attached" fork. If true, will create a detached copy. Default false.
   * **title** String. Overrides the title. Only applies if `detached` is true.
   * **description** String. Overrides the description. Only applies if `detached` is true.
+  * **tags** String. A space-separated list of tags to assign to the drive in the library.
   * **prompt** Boolean. If true, shows the "fork" modal. If false, only asks the user for permission. Default true.
 * Returns **Promise&lt;Hyperdrive&gt;**.
 
