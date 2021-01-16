@@ -7,7 +7,7 @@ The standard behavior of `hyper://` is to serve whichever file is referenced by 
 1. Sites which need a consistent theme and template applied across each page.
 2. Applications which need to serve interfaces even where a file does not exist (as in the [Single Page Application](https://en.wikipedia.org/wiki/Single-page_application) pattern).
 
-Two solve this, the `hyper://` protocol supports a behavior called "Frontends."
+To solve this, the `hyper://` protocol supports a behavior called "Frontends."
 
 ## How frontends work
 
