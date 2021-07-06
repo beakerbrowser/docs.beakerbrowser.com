@@ -12,5 +12,6 @@ A .goto file is not expected to have any content. Instead, it has two [metadata 
 When a .goto file is visited on the `hyper://` protocol, Beaker will automatically redirect to its `href` value.
 
 :::note
-You can create .goto files using [Webterm](advanced/webterm.md) with the **mkgoto** command.
+You can create .goto files using [Webterm](advanced/webterm.md) with the **mkgoto** command: \
+`mkgoto ./some-link.goto hyper://208523...c2/`
 :::
